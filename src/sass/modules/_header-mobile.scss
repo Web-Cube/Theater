@@ -1,0 +1,68 @@
+.header-mobile {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 150;
+	background: #fff;
+	overflow-x: hidden;
+	overflow-y: auto;
+	display: none;
+	&__top {
+		padding: 20px 0;
+	}
+	&__logo {
+		width: 117px;
+	}
+	&__close {
+		width: 20px;
+		height: 20px;
+		stroke: #130C0E;
+		stroke-width: 1.5;
+	}
+	&__nav {
+		padding: 30px 0 50px 0;
+		border-bottom: 1px solid #D3D4D5;
+		list-style: none;
+		text-align: center;
+	}
+	&__item {
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	&__link {
+		font-size: 15px;
+		line-height: 18px;
+	}
+	&__contact {
+		padding: 50px 0;
+		text-align: center;
+		&-item {
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+		&-label {
+			margin-bottom: 7px;
+		}
+		&-text {
+			font-weight: 600;
+		}
+	}
+	&__social {
+		margin: 0 auto;
+		display: inline-flex;
+	}
+	&__bottom {
+		padding-bottom: 50px;
+		text-align: center;
+	}
+	&__search-form {
+		padding-bottom: 20px;
+	}
+	&__btn {
+		margin-top: 10px;
+	}
+}

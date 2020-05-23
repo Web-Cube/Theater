@@ -1,0 +1,27 @@
+.swiper-pagination {
+	font-size: 20rem;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+
+.swiper-time {
+	position: relative;
+	height: 2px;
+	width: 54px;
+	background: #fff;
+	margin-right: 20rem;
+	margin-left: 20rem;
+	&__loader {
+		display: block;
+		height: 2px;
+		background: $red;
+		transition: ease .2s;
+	}
+}
+
+@include max-screen($small_tablet) {
+	.swiper-pagination {
+		font-size: 13px;
+	}
+}

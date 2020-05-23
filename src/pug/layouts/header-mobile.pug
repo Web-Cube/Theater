@@ -1,0 +1,64 @@
++b.header-mobile.js-mobile-menu
+	+e.wrap.wrap
+		+e.top.flex._justify._vertical
+			+e.A.logo(href="main.html")
+				img(src="/app/img/logo2.svg")
+			+e.close
+				+icon('close')
+		+e.UL.nav
+			+e.LI.item
+				+e.A.link(href="#") О театре
+			+e.LI.item
+				+e.A.link(href="#") Проекты
+			+e.LI.item
+				+e.A.link(href="#") Новости
+			+e.LI.item
+				+e.A.link(href="#") Афиша
+			+e.LI.item
+				+e.A.link(href="#") Люди театра
+		+e.contact
+			+e.contact-item
+				+e.contact-label.p15.is-gray Администратор
+				+e.A.contact-text.h5(href="tel:+79787535300")
+					| +7 978 753 53 00
+			+e.contact-item
+				+e.contact-label.p15.is-gray Приемная
+				+e.A.contact-text.h5(href="tel:+73656960457")
+					| +7 365 696 04 57
+			+e.contact-item
+				+e.contact-label.p15.is-gray Е-mail
+				+e.A.contact-text.h5(href="mailto:3656962524@mail.ru ")
+					| 3656962524@mail.ru
+			+e.contact-item
+				+e.contact-label.p15.is-gray График работы кассы
+				+e.A.contact-text.h5
+					| Будни с 12:00 - 18:00
+					br
+					| Выходные с 10:00 - 18:00
+					br
+					| Обед с 13:00 - 14:00
+					br
+					span.is-red Выходной — ПН
+		+e.bottom
+			+e.social.social__._middle.flex
+				+e.A.link(href="#")
+					+icon('vk')
+				+e.A.link(href="#")
+					+icon('fb')
+				+e.A.link(href="#")
+					+icon('youtube')
+				+e.A.link(href="#")
+					+icon('instagram')
++b.header-mobile.js-mobile-search
+	+e.wrap.wrap
+		+e.top.flex._justify._vertical
+			+e.A.logo(href="main.html")
+				img(src="/app/img/logo2.svg")
+			+e.close
+				+icon('close')
+		+e.FORM.search-form.form__
+			+e.field
+				+e.INPUT.input(type="text")
+				+e.icon-search
+					+icon('search')
+			.header-mobile__btn.BUTTON.btn.btn_red Поиск

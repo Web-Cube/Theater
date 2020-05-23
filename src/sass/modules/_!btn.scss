@@ -1,0 +1,87 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-width: 170px;
+	height: 53px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 17rem;
+	text-transform: uppercase;
+	padding: 0 30px;
+	position: relative;
+	font-family: 'Solomon Sans';
+	&_figure {
+		.btn__text {
+			background-color: $red;
+		}
+		.btn__circle {
+			fill: $red;
+		}
+		&:hover {
+			color: $red;
+			.btn__text {
+				background-color: transparent;
+			}
+			.btn__circle {
+				fill: none;
+			}
+		}
+	}
+	&__text {
+		background-color: $red;
+		min-width: 110px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 53px;
+		border-top: 1px solid $red;
+		border-bottom: 1px solid $red;
+	}
+	&__circle {
+		position: absolute;
+		top: 0;
+		width: 30px;
+		height: 100%;
+		overflow: hidden;
+		stroke: $red;
+		stroke-width: 1.3;
+		svg {
+			position: absolute;
+			height: 100%;
+			width: 170px;
+			max-width: none;
+		}
+		&_left {
+			left: 0;
+			svg {
+				left: 0;
+			}
+		}
+		&_right {
+			right: 0;
+			svg {
+				right: 0;
+			}
+		}
+	}
+	&_red {
+		background: $red;
+		border: 0;
+	}
+}
+
+.btn-rect {
+	display: inline-flex;
+}
+
+@include max-screen($small_mobile) {
+	.btn {
+		width: 100%;
+		&__text {
+			width: 100%;
+		}
+	}
+}
