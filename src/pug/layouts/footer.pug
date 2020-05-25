@@ -1,1 +1,89 @@
 +b.FOOTER.footer
+	+e.wrap.wrap
+		+e.top.flex
+			+e.column.col-min-12.col-sm-3
+				+e.A.logo(href="main.html")
+					img(src="/app/img/logo2.svg")
+				+e.social.social__.flex
+					+e.A.link(href="#")
+						+icon('vk')
+					+e.A.link(href="#")
+						+icon('fb')
+					+e.A.link(href="#")
+						+icon('youtube')
+					+e.A.link(href="#")
+						+icon('instagram')
+			+e.column.col-min-12.col-sm-6
+				+e.UL.menu
+					+e.LI.menu-item
+						+e.menu-head
+							+e.A.menu-title(href="#") О театре
+							+e.menu-arrow
+								+icon('arrowSelect')
+						+e.UL.sub-menu
+							+e.LI.sub-item
+								a(href="#") Информация
+							+e.LI.sub-item
+								a(href="#") Детский театр «Золотой ключик»
+							+e.LI.sub-item
+								a(href="#") Международный фестиваль «земля. театр. дети»
+							+e.LI.sub-item
+								a(href="#") Техническая информация
+							+e.LI.sub-item
+								a(href="#") Документы
+							+e.LI.sub-item
+								a(href="#") Вакансии
+					+e.LI.menu-item
+						+e.A.menu-title(href="#") Проекты
+					+e.LI.menu-item
+						+e.A.menu-title(href="#") Новости
+					+e.LI.menu-item
+						+e.A.menu-title(href="#") Афиша
+					+e.LI.menu-item
+						+e.A.menu-title(href="#") Спектакли
+					+e.LI.menu-item
+						+e.A.menu-title(href="#") Люди театра
+					+e.LI.menu-item
+						+e.menu-head
+							+e.A.menu-title(href="#") Спектакли
+							+e.menu-arrow
+								+icon('arrowSelect')
+						+e.UL.sub-menu
+							+e.LI.sub-item
+								a(href="#") Детские
+							+e.LI.sub-item
+								a(href="#") Взрослые
+			+e.column.col-min-12.col-sm-3
+				+e.offers
+					+e.offer.flex._vertical
+						+e.offer-img
+							img(src="/img/ministry.png")
+						+e.offer-text
+							| Министерство 
+							br
+							| культуры 
+							br
+							| республики Крым
+					+e.offer.flex._vertical
+						+e.offer-img
+							img(src="/app/img/control-check.svg")
+						+e.offer-text
+							| Оценка качества 
+							br
+							| предоставляемых услуг 
+							br
+							| МЦТИ "Золотой ключик"
+				+e.A.btn.btn__._ticket._ticket-border.js-modal(href="#buy")
+						+e.text Купить билет
+						+e.ticket._left
+							+icon('ticket')
+						+e.ticket._right
+							+icon('ticket')
+		+e.bottom.flex
+			+e.column.col-min-4.col-sm-6
+				+e.copyright.p15 © 2020 Все права защищены
+			+e.column.col-min-8.col-sm-6.flex_justify
+				+e.A.polity.p15.js-modal(href='#polity') Политика конфиденциальности
+				+e.A.develop.p15(href="https://karanikola.ru",target="_blank")
+					| Создание сайта - 
+					span.is-red Karanikola

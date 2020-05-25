@@ -1,0 +1,31 @@
+.search-page {
+	margin-top: 125rem;
+	&__form {
+		&-field {
+			position: relative;
+		}
+		&-input {
+			display: block;
+			width: auto;
+			height: auto;
+			border: 0;
+			border-bottom: 1px solid $black;
+			font-size: 50rem;
+			line-height: 1;
+			width: 100%;
+			padding-bottom: 49rem;
+		}
+		&-delete {
+			stroke: $black;
+			width: 34rem;
+			height: 34rem;
+			position: absolute;
+			right: 0;
+			bottom: 57rem;
+			cursor: pointer;
+		}
+		&-result {
+			margin-top: 30rem;
+		}
+	}
+}

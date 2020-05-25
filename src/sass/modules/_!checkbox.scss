@@ -1,0 +1,47 @@
+.checkbox {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	&__input {
+		display: none;
+		&:checked + .checkbox__icon {
+			svg {
+				opacity: 1;
+			}
+		}
+	}
+	&__icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 24rem;
+		height: 24rem;
+		border: 2px solid $gray;
+		border-radius: 3px;
+		margin-right: 20rem;
+		svg {
+			width: 13rem;
+			fill: none;
+			stroke: $red;
+			stroke-width: 2px;
+			transition: ease .2s;
+			opacity: 0;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.checkbox {
+		&__icon {
+			width: 16px;
+			height: 16px;
+			margin-right: 10px;
+			svg {
+				width: 8px;
+			}
+		}
+		&__text {
+			font-size: 12px;
+		}
+	}
+}

@@ -1,6 +1,15 @@
 .header {
-	padding: 50rem 0 50rem 0;
 	
+	&__row {
+		padding: 50rem 0 50rem 0;
+		&_border {
+			border-bottom: 1px solid #6D6E71;
+		}
+	}
+	
+	&__btn {
+		margin-left: 90rem;
+	}
 	&_main {
 		position: absolute;
 		z-index: 100;
@@ -62,6 +71,9 @@
 			stroke: #fff;
 			stroke-width: 1.5;
 			cursor: pointer;
+			&_gray {
+				stroke: $gray;
+			}
 		}
 	}
 	
@@ -76,7 +88,9 @@
 
 @include max-screen($small_tablet) {
 	.header {
-		padding: 20px 0;
+		&__row {
+			padding: 20px 0;
+		}
 		&__nav {
 			display: none;
 		}
@@ -98,6 +112,9 @@
 			width: 117px;
 		}
 		&__vr, &__social {
+			display: none;
+		}
+		&__btn {
 			display: none;
 		}
 	}

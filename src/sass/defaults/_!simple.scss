@@ -44,6 +44,7 @@ body {
 
 .main-wrap {
 	font-size: 15rem;
+	overflow: hidden;
 }
 
 input,
@@ -53,6 +54,19 @@ textarea {
 	-moz-appearance: none;
 	color: inherit;
 	font-family: inherit;
+}
+
+/* Для Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+/* Для Firefox */
+input[type=number]{
+  -moz-appearance: textfield;
 }
 
 main {
@@ -203,4 +217,8 @@ svg {
 
 .is-red {
 	color: $red;
+}
+
+.is-green {
+	color: $green;
 }

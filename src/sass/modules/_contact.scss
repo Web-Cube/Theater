@@ -1,0 +1,54 @@
+.contact {
+	margin-top: 150rem;
+	&__label {
+		margin-bottom: 10rem;
+	}
+	&__row {
+		padding-top: 36rem;
+	}
+	&__column {
+		margin-top: 30rem;
+		max-width: 365rem;
+	}
+	&__map {
+		margin-top: 60rem;
+	}
+}
+
+.map {
+	height: 450rem;
+	background: url(/img/map.jpg) center no-repeat;
+	background-size: cover;
+}
+
+@include max-screen($small_tablet) {
+	.contact {
+		&__column {
+			min-width: 250rem;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.contact {
+		margin-top: 50px;
+		&__row {
+			padding-top: 13px;
+		}
+		&__column {
+			width: 100%;
+			max-width: none;
+			margin-top: 17px;
+			&:not(:last-child) {
+				padding-bottom: 15px;
+				border-bottom: 1px solid #D3D4D5;
+			}
+		}
+		&__map {
+			margin-top: 30px;
+			margin-left: -20px;
+			margin-right: -20px;
+			height: 260px;
+		}
+	}
+}

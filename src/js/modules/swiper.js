@@ -47,6 +47,37 @@ var swiper = {
 				$('.swiper-time__loader').css('width',width+'%');
 			}
 		});
+		
+		var sliderNews = new Swiper('.news__slider', {
+			loop: false,
+			slidesPerView: 4,
+			slidesPerColumn: 2,
+			slidesPerColumnFill: 'row',
+			slidesPerGroup: 8,
+			navigation: {
+				nextEl: ".nav-slider__arrow_next",
+				prevEl: ".nav-slider__arrow_prev",
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					slidesPerColumn: 1,
+					slidesPerGroup: 1,
+				},
+				580: {
+					slidesPerView: 2,
+					slidesPerGroup: 4,
+				},
+				769: {
+					slidesPerView: 3,
+					slidesPerGroup: 6,
+				},
+				1280: {
+					slidesPerView: 4,
+					slidesPerGroup: 8,
+				},
+			},
+		});
 
 	}
 

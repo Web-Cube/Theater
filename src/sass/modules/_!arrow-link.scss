@@ -1,0 +1,41 @@
+.arrow-link {
+	display: inline-flex;
+	align-items: center;
+	&__icon {
+		width: 6px;
+		height: 10px;
+		stroke: $red;
+		fill: none;
+		stroke-width: 4px;
+		margin-left: 10rem;
+		position: relative;
+		transition: ease .2s;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 1px;
+			background: $red;
+			right: 0;
+			top: 50%;
+			transition: ease .2s;
+		}
+	}
+	&:hover {
+		.arrow-link__icon {
+			transform: translateX(14rem);
+			&:before {
+				width: 20px;
+			}
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.arrow-link {
+		&__text {
+			font-size: 12px;
+		}
+	}
+}

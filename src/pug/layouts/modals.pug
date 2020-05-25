@@ -1,1 +1,74 @@
-+b.modals._recall.mfp-hide#recall
++b.polity.modals.mfp-hide#polity
+	+e.H2.title
+		| Privacy Policy
+	+e.inside
+		p
+			| July 2018
+		p
+			| COMPANY, S. L. is the owner and, therefore, responsible for the projects indicated below, including any of their subdomains or sections (hereinafter, "Website" as corresponds):
+		p
+			| This legal text applies to the information we collect from you when you visit our Website, as in the following cases: user registration, using any of our services, collaboration, subscription to our newsletters or personal information provided when filling in online forms.
+			p
+			| The present Privacy Policy regulates the processing of personal data belonging to the Website’s users (hereinafter, "User" or "Users", as applicable) performed by Freepik Company, S.L. (hereinafter, "Freepik Company"), collected through the use of the services offered on the Website (hereinafter, "Services").
+		p
+			| By using and accessing our Website, the User acknowledges that they have read this Privacy Policy and that they fully agree with it. The latest update of this Privacy Policy is indicated at the top of this text and it will become effective immediately upon being posted. Freepik Company, thus, recommends reviewing this Privacy Policy from time to time.
+		p
+			| Some of the Services offered on the Website may be subject to specific privacy policies that will supplement this general Privacy Policy or, in case they differ from the terms of this Privacy Policy, they will substitute the present Privacy Policy. These additional privacy policies must be accepted by the User before initiating the corresponding Service. Additionally, the access and use of the Website and the accompanying Services are governed by the Terms of Use of the Website.
+		p
+			| By using and accessing our Website, the User acknowledges that they have read this Privacy Policy and that they fully agree with it. The latest update of this Privacy Policy is indicated at the top of this text and it will become effective immediately upon being posted. Freepik Company, thus, recommends reviewing this Privacy Policy from time to time.
+		p
+			| Some of the Services offered on the Website may be subject to specific privacy policies that will supplement this general Privacy Policy or, in case they differ from the terms of this Privacy Policy, they will substitute the present Privacy Policy. These additional privacy policies must be accepted by the User before initiating the corresponding Service. Additionally, the access and use of the Website and the accompanying Services are governed by the Terms of Use of the Website.
++b.buy.modals.mfp-hide#buy
+	+e.H2.title
+		| Отправить заявку
+	+e.FORM.form.form__
+		+e.row.flex
+			+e.column
+				+e.LABEL.label.p15.is-gray ФИО
+				+e.INPUT.input(type="text")
+			+e.column
+				+e.LABEL.label.p15.is-gray Опыт работы лет
+				+e.quantity
+					+e.INPUT.input.js-quantity-num(type="number",value="1")
+					+e.quantity-arrow._plus
+						+icon('prev')
+					+e.quantity-arrow._minus
+						+icon('next')
+			+e.column
+				+e.LABEL.label.p15.is-gray Тел/Е-мейл
+				+e.INPUT.input(type="text",name="contact")
+			+e.column
+				+e.LABEL.label.p15.is-gray Последние место работы и занимаемая должность
+				+e.INPUT.input(type="text")
+			+e.column
+				+e.LABEL.label.p15.is-gray Желаемая должность
+				+e.INPUT.input(type="text")
+			+e.column
+				+e.LABEL.label.p15.is-gray Ожидаемая зп
+				+e.INPUT.input(type="text")
+			+e.column._big
+				+e.LABEL.label.p15.is-gray Комментарий
+				+e.TEXTAREA.input._text
+		+e.bottom.flex._vertical
+			+e.bottom-col.flex._vertical
+				+e.A.download.is-red(href="#")
+					+e.download-icon
+						+icon('arrowDownload')
+					+e.download-text.p.b
+						| Скачать анкету
+				+e.attach-file.attach-file__
+					+e.INPUT.input(type="file")
+					+e.item._add.is-red
+						+e.icon
+							+icon('clip')
+						+e.text.p.b
+							| Прикрепить резюме или файл
+					+e.item._success.is-green
+						+e.icon
+							+icon('success')
+						+e.text.p.b
+							| Приложение загружено
+			+e.bottom-col.flex._vertical._justify
+				+e.agree.is-gray
+					| При отправке вы соглашаетесь с обработкой персональных данных
+				+e.BUTTON.btn.btn_border Отправить

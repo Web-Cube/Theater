@@ -1,0 +1,17 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Поиск';
+
+block content
+	include ../layouts/header
+	+b.search-page
+		+e.wrap.wrap
+			+e.FORM.form
+				+e.form-field
+					+e.INPUT.form-input(placeholder="Введите фразу или слово...")
+					+e.form-delete
+						+icon('close')
+				+e.form-result.p15
+					| Результаты: 
+					span.js-search-result 18

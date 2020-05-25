@@ -1,1 +1,24 @@
-+e.HEADER.header
++b.HEADER.header
+	+e.wrap.wrap
+		+e.row._border.flex_justify
+			+e.column.col-sm-6.flex_vertical
+				+e.A.logo(href="main.html")
+					img(src="/app/img/logo2.svg")
+				+e.A.btn.btn__._ticket.js-modal(href="#buy")
+					+e.text Купить билет
+					+e.ticket._left
+						+icon('ticket')
+					+e.ticket._right
+						+icon('ticket')
+			+e.column.col-sm-6.flex._vertical._justify
+				+e.NAV.nav
+					+e.A.link(href="#") О театре
+					+e.A.link(href="#") Проекты
+					+e.A.link(href="#") Новости
+					+e.A.link(href="#") Афиша
+					+e.A.link(href="#") Люди театра
+				+e.search
+					+e.search-btn._gray
+						+icon('search')
+				+e.burger._black
+					+icon('burger')

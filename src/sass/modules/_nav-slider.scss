@@ -1,0 +1,33 @@
+.nav-slider {
+	&__arrow {
+		width: 12rem;
+		height: 24rem;
+		fill: none;
+		stroke: #000;
+		stroke-width: 3;
+		cursor: pointer;
+		transition: ease .2s;
+		&_prev {
+			margin-right: 80rem;
+		}
+		&:hover {
+			stroke: $red;
+		}
+		&.swiper-button-disabled {
+			stroke: #D4D4D5;
+			cursor: not-allowed;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.nav-slider {
+		&__arrow {
+			width: 10px;
+			height: 20px;
+			&_prev {
+				margin-right: 40px;
+			}
+		}
+	}
+}

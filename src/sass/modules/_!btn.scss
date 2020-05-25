@@ -12,64 +12,75 @@
 	padding: 0 30px;
 	position: relative;
 	font-family: 'Solomon Sans';
-	&_figure {
-		.btn__text {
-			background-color: $red;
-		}
-		.btn__circle {
-			fill: $red;
-		}
+	transition: ease .2s;
+	&_ticket {
 		&:hover {
 			color: $red;
-			.btn__text {
-				background-color: transparent;
+			.btn__ticket {
+				svg {
+					fill: none;
+				}
 			}
-			.btn__circle {
-				fill: none;
+		}
+		&-border {
+			color: $black;
+			.btn__ticket {
+				svg {
+					fill: none;
+				}
+			}
+			&:hover {
+				color: #fff;
+				.btn__ticket {
+					svg {
+						fill: $red;
+					}
+				}
 			}
 		}
 	}
 	&__text {
-		background-color: $red;
-		min-width: 110px;
-		display: inline-flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		height: 53px;
-		border-top: 1px solid $red;
-		border-bottom: 1px solid $red;
+		position: relative;
+		z-index: 2;
 	}
-	&__circle {
+	&__ticket {
 		position: absolute;
 		top: 0;
-		width: 30px;
+		width: 50%;
 		height: 100%;
 		overflow: hidden;
-		stroke: $red;
-		stroke-width: 1.3;
 		svg {
-			position: absolute;
-			height: 100%;
-			width: 170px;
 			max-width: none;
+			height: 53px;
+			width: auto;
+			fill: $red;
+			stroke-width: 1.5;
+			stroke: $red;
 		}
 		&_left {
 			left: 0;
-			svg {
-				left: 0;
-			}
 		}
 		&_right {
 			right: 0;
 			svg {
+				position: absolute;
 				right: 0;
+				top: 0;
 			}
 		}
 	}
 	&_red {
 		background: $red;
 		border: 0;
+	}
+	&_border {
+		background: none;
+		border: 1px solid $red;
+		color: $black;
+		&:hover {
+			background: $red;
+			color: #fff;
+		}
 	}
 }
 
