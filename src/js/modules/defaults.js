@@ -73,10 +73,23 @@ var defaults = {
 	
 	toggleSidebar: () => {
 		
+		$('.team__nav-item').click(function(){
+			let text = $(this).text(),
+				index = $(this).index();
+			if ( $(this).hasClass('is-active') ) {
+			} else {
+				$('.team__nav-item.is-active').removeClass('is-active');
+				$(this).addClass('is-active');
+				$(this).closest('.js-mobile-select').find('.js-mobile-label').text(text);
+				$('.team__tab:visible').hide();
+				$('.team__tab:eq(' + index + ')').fadeIn(500);
+			}
+		});
+		
 		if ( $(window).innerWidth() < 769 ) {
 			
-			$('.sidebar__nav').each(function(){
-				$('.sidebar__nav-label').text( $('.sidebar__nav-item.is-active').text() );
+			$('.js-mobile-select').each(function(){
+				$('.js-mobile-label').text( $('.js-mobile-item.is-active').text() );
 			}).click(function(){
 				$(this).toggleClass('is-active');
 			})

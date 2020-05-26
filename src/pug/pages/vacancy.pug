@@ -1,7 +1,7 @@
 extends ../layouts/base
 
 append vars
-	- title = 'Информация';
+	- title = 'Вакансии';
 
 block content
 	include ../layouts/header
@@ -11,7 +11,7 @@ block content
 				+e.LI.item
 					a(href="#") Главная
 				+e.LI.item
-					| Сведения об организации
+					| Вакансии
 			+e.row.flex_justify
 				+e.sidebar.sidebar__
 					+e.nav.js-mobile-select
@@ -20,14 +20,14 @@ block content
 							+e.nav-icon
 								+icon('arrowSelect')
 						+e.nav-list
-							+e.A.nav-item.js-mobile-item.is-active(href="#") Основные сведения
+							+e.A.nav-item.js-mobile-item(href="#") Основные сведения
 							+e.A.nav-item.js-mobile-item(href="#") Документы
 							+e.A.nav-item.js-mobile-item(href="#") Политика обработки персональных данных
 							+e.A.nav-item.js-mobile-item(href="#") Правила продажи и возврата билетов
 							+e.A.nav-item.js-mobile-item(href="#") Положение о платных услугах
 							+e.A.nav-item.js-mobile-item(href="#") Антикоррупционная политика
 							+e.A.nav-item.js-mobile-item(href="#") Материально-техническое обеспечение
-							+e.A.nav-item.js-mobile-item(href="#") Вакантные места для приёма (перевода)
+							+e.A.nav-item.js-mobile-item.is-active(href="#") Вакансии
 				+e.content
-					+e.H1.title.h3 Основные сведения
-					include ../layouts/info
+					+e.H1.title.h3 Вакансии
+					include ../layouts/vacancy

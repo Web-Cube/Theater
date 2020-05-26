@@ -13,3 +13,11 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Solomon Sans';
+    src: url('../fonts/SolomonSans-Light.woff2') format('woff2'),
+        url('../fonts/SolomonSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}

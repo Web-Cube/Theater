@@ -1,0 +1,169 @@
+.history {
+	margin-top: 150rem;
+	&__bg {
+		position: absolute;
+		width: 3000px;
+		height: 3000px;
+		background: rgba(109, 110, 113, 0.05);
+		position: absolute;
+		left: 50%;
+		margin-left: -1500px;
+		bottom: 0;
+	}
+	&__top {
+		position: relative;
+		padding-bottom: 100rem;
+		&-desc {
+			font-size: 35rem;
+			line-height: 50/35*1;
+		}
+	}
+	&__start {
+		&-info {
+			padding: 100rem 0 100rem 0;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 3000px;
+				left: 50%;
+				margin-left: -1500px;
+				height: 100%;
+				background: rgba(109, 110, 113, 0.05);
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 680/860*100%;
+				background: $gray;
+				height: 1px;
+			}
+		}
+		&-img {
+			position: relative;
+			margin-bottom: 100rem;
+		}
+		&-quote {
+			margin: 60rem 0 100rem 0;
+		}
+		&-text {
+			line-height: 35/20*1;
+		}
+	}
+	&__year {
+		font-size: 120rem;
+		line-height: 90/120*1;
+		font-weight: 300;
+		position: relative;
+	}
+	&__desc {
+		position: relative;
+	}
+	&__number {
+		&-list {
+			padding-top: 100rem;
+			margin-bottom: 150rem;
+		}
+		&-item {
+			margin-top: 50rem;
+		}
+		&-year {
+			font-size: 90rem;
+			line-height: 1;
+			margin-bottom: 20rem;
+			font-weight: 300;
+		}
+		&-text {
+			font-size: 20rem;
+			line-height: 1.33;
+		}
+	}
+}
+
+@include max-screen($small_tablet) {
+	.history {
+		&__top {
+			&-desc {
+				margin-top: 30px;
+			}
+		}
+		&__start {
+			&-info {
+				width: 100%;
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.history {
+		margin-top: 30px;
+		&__title {
+			br {
+				display: none;
+			}
+		}
+		&__top {
+			padding-bottom: 50px;
+			&-desc {
+				font-size: 15px;
+				line-height: 25px;
+				font-weight: 600;
+				letter-spacing: normal;
+			}
+		}
+		&__start {
+			&-info {
+				padding: 30px 0 30px 0;
+				justify-content: space-between;
+				&:before {
+					height: 400px;
+				}
+			}
+			&-img {
+				margin-bottom: 30px;
+			}
+			&-text {
+				font-size: 15px;
+				line-height: 25px;
+			}
+			&-quote {
+				margin: 30px 0 30px 0;
+			}
+		}
+		&__year {
+			font-size: 25px;
+			line-height: 20px;
+		}
+		&__text {
+			br {
+				display: none;
+			}
+		}
+		&__number {
+			&-list {
+				padding-top: 0;
+				margin-bottom: 30px;
+			}
+			&-item {
+				margin-top: 30px;
+				width: 100%;
+			}
+			&-year {
+				font-size: 25px;
+				font-weight: 500;
+				margin-bottom: 10px;
+			}
+			&-text {
+				font-size: 15px;
+				line-height: 20px;
+			}
+		}
+	}
+}
+

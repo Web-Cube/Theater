@@ -1,0 +1,63 @@
+.docs {
+	&__item {
+		display: block;
+		position: relative;
+		min-height: 230rem;
+		border: 1px solid  #D3D4D5;
+		transition: ease .2s;
+		margin-right: -1px;
+		margin-bottom: -1px;
+		&:hover {
+			background: $red;
+			color: #fff;
+			.docs__download {
+				color: #fff;
+				.download__icon {
+					stroke: #fff;
+				}
+			}
+		}
+	}
+	&__name {
+		font-size: 20rem;
+		line-height: 25rem;
+		font-weight: 600;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		padding: 40rem;
+	}
+	&__download {
+		position: absolute;
+		left: 40rem;
+		bottom: 40rem;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.docs {
+		&__item {
+			width: 100%;
+			min-height: 160px;
+			margin-right: 0;
+		}
+		&__name {
+			padding: 20px;
+			font-size: 15px;
+			line-height: 25px;
+		}
+		&__download {
+			left: 20px;
+			bottom: 20px;
+		}
+	}
+}
+
+@include max-screen(359px) {
+	.docs {
+		&__item {
+			min-height: 180px;
+		}
+	}
+}

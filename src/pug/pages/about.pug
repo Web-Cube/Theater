@@ -1,0 +1,15 @@
+extends ../layouts/base
+
+append vars
+	- title = 'О театре';
+
+block content
+	include ../layouts/header
+	+b.page
+		+e.wrap.wrap
+			+e.UL.breadcrumbs.breadcrumbs__.flex
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					| О театре
+			include ../layouts/about

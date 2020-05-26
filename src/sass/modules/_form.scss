@@ -79,18 +79,6 @@
 			}
 		}
 	}
-	&__download {
-		display: flex;
-		align-items: center;
-		margin-right: 13%;
-		&-icon {
-			width: 14rem;
-			height: 11rem;
-			stroke: $red;
-			stroke-width: 2px;
-			margin-right: 15rem;
-		}
-	}
 	&__bottom {
 		margin: 0 -15rem;
 		&-col {
@@ -145,13 +133,6 @@
 		}
 		&__download {
 			margin-bottom: 24px;
-			&-icon {
-				width: 14px;
-				height: 11px;
-			}
-			&-text {
-				font-size: 15px;
-			}
 		}
 		&__btn {
 			margin-top: 30px;

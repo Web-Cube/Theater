@@ -1,0 +1,26 @@
+.download {
+	display: flex;
+	align-items: center;
+	margin-right: 13%;
+	transition: ease .2s;
+	&__icon {
+		width: 14rem;
+		height: 11rem;
+		stroke: $red;
+		stroke-width: 2px;
+		margin-right: 15rem;
+		transition: ease .2s;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.download {
+		&__icon {
+			width: 14px;
+			height: 11px;
+		}
+		&__text {
+			font-size: 15px;
+		}
+	}
+}
