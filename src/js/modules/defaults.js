@@ -105,6 +105,10 @@ var defaults = {
 		defaults.quantityProducts();
 		defaults.attachFile();
 		defaults.toggleSidebar();
+		
+		$('.js-fixed').each(function(){
+			$('.main-wrap').css('overflow','visible');
+		});
 
 	}
 }
