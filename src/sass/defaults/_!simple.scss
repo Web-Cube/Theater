@@ -45,6 +45,7 @@ body {
 .main-wrap {
 	font-size: 15rem;
 	overflow: hidden;
+	letter-spacing: -0.02em;
 }
 
 input,
@@ -213,6 +214,10 @@ svg {
 
 .is-gray {
 	color: $gray;
+}
+
+.is-gray_light {
+	color: $gray_light;
 }
 
 .is-red {

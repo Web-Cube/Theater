@@ -1,0 +1,33 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Информация';
+
+block content
+	include ../layouts/header
+	+b.page
+		+e.wrap.wrap
+			+e.UL.breadcrumbs.breadcrumbs__.flex
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					| Сведения об организации
+			+e.row.flex_justify
+				+e.sidebar.sidebar__
+					+e.nav
+						+e.nav-head
+							+e.nav-label Основные сведения
+							+e.nav-icon
+								+icon('arrowSelect')
+						+e.nav-list
+							+e.A.nav-item.is-active(href="#") Основные сведения
+							+e.A.nav-item(href="#") Документы
+							+e.A.nav-item(href="#") Политика обработки персональных данных
+							+e.A.nav-item(href="#") Правила продажи и возврата билетов
+							+e.A.nav-item(href="#") Положение о платных услугах
+							+e.A.nav-item(href="#") Антикоррупционная политика
+							+e.A.nav-item(href="#") Материально-техническое обеспечение
+							+e.A.nav-item(href="#") Вакантные места для приёма (перевода)
+				+e.content
+					+e.H1.title.h3 Основные сведения
+					include ../layouts/info

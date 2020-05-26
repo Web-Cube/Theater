@@ -70,6 +70,20 @@ var defaults = {
 			$(this).closest('.attach-file').addClass('is-active');
 		});
 	},
+	
+	toggleSidebar: () => {
+		
+		if ( $(window).innerWidth() < 769 ) {
+			
+			$('.sidebar__nav').each(function(){
+				$('.sidebar__nav-label').text( $('.sidebar__nav-item.is-active').text() );
+			}).click(function(){
+				$(this).toggleClass('is-active');
+			})
+			
+		}
+		
+	},
 
 	init: () => {
 
@@ -77,6 +91,7 @@ var defaults = {
 		defaults.dropdownMenu();
 		defaults.quantityProducts();
 		defaults.attachFile();
+		defaults.toggleSidebar();
 
 	}
 }

@@ -1,0 +1,19 @@
+.breadcrumbs {
+	list-style: none;
+	font-size: 14rem;
+	line-height: 17rem;
+	&__item {
+		&:not(:last-child) {
+			margin-right: 6rem;
+			&:after {
+				content: '/';
+				display: inline-block;
+				margin-left: 5rem;
+				color: $gray;
+			}
+		}
+		a {
+			color: $gray;
+		}
+	}
+}
