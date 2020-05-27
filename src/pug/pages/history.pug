@@ -52,13 +52,13 @@ block content
 							| Олег и  Нина Пермяковы создали театр, который не только стал осуществлением мечты, но и на протяжении десятилетий неизменно был и остается лидером театрального движения в Крыму и за его пределами. На «ровном месте» в курортной Евпатории возник детский театр, который в скором будущем стал центром, а в последствии получил статус международного.
 				+e.number-list.flex
 					+e.number-item.col-min-6.col-sm-3
-						+e.number-year._small.is-red 1987
+						+e.number-year.is-red 1987
 						+e.number-text.is-gray
 							| Межшкольный 
 							br
 							| детский театр
 					+e.number-item.col-min-6.col-sm-3
-						+e.number-year._small.is-red 1989
+						+e.number-year.is-red 1989
 						+e.number-text.is-gray
 							| Детский театральный 
 							br
@@ -70,7 +70,7 @@ block content
 							br
 							| центр-комплекс
 					+e.number-item.col-min-6.col-sm-3
-						+e.number-year._small.is-red 2014
+						+e.number-year.is-red 2014
 						+e.number-text.is-gray
 							| Международный центр 
 							br
@@ -82,3 +82,482 @@ block content
 							| Первые годы на сценах театра работали две труппы: детская «Золотой ключик» под руководством Нины Пермяковой и взрослая «Учительский театр» под руководством Олега Пермякова. Коллектив сотрудников в то время состоял из 11 человек. 
 							br
 							| Сегодня в Крымском театре юного зрителя служат 150 сотрудников, из низ 9 выпускников центра. Первыми премьерами стали спектакли: «Золотой ключик» А. Толстого (31 мая 1987 г., реж. Н. Пермякова), «Мальчиш-Кибальчиш» А. Гайдара (27 декабря 1987 г., реж. О. Пермяков), «Кошкин дом» С. Маршака (20 марта 1988 г., реж. Н. Пермякова), «Про Федота-стрельца, удалого молодца» Л. Филатова (20 апреля 1988 г., реж. О Пермяков) и  «Какое счастье?!» (31 мая 1988 г., реж. О. Пермяков). Всего за 33 театральных сезона состоялось 173 премьеры спектаклей для детей и взрослых в постановке: Нины, Олега, Андрея, Сергея и Анастасии Пермяковых, Олега Кушлю, Виталия Нарышкина, Павла Костицына, Бориса Завальнюка, Елены Астраханцевой, А. Кропотовой, Н. Сулимовской, Елены Кулишовой, А. Трапезниковой, И. Котелевич, Д. Полякова, И. Фаустовой, Е. Макарченко, В. Свешниковой, Е. Шарпило, Л. Муслединовой, С. Толстых, С. Новикова, А. Кравец, Н. Романовой.
+		+e.gallery.gallery__._big.js-container
+			+e.wrap.wrap
+				+e.years.swiper-container
+					.swiper-wrapper
+						+e.years-item.swiper-slide.js-nav-item.is-active 1989
+						+e.years-item.swiper-slide.js-nav-item 1993
+						+e.years-item.swiper-slide.js-nav-item 1998
+						+e.years-item.swiper-slide.js-nav-item 2000
+						+e.years-item.swiper-slide.js-nav-item 2003
+						+e.years-item.swiper-slide.js-nav-item 2004
+						+e.years-item.swiper-slide.js-nav-item 2005
+						+e.years-item.swiper-slide.js-nav-item 2006
+						+e.years-item.swiper-slide.js-nav-item 2007
+						+e.years-item.swiper-slide.js-nav-item 2008
+						+e.years-item.swiper-slide.js-nav-item 2009
+						+e.years-item.swiper-slide.js-nav-item 2014
+					+e.years-arrow._prev.swiper-prev
+						+icon('prev')
+					+e.years-arrow._next.swiper-next
+						+icon('next')
+				+e.inside
+					+e.tabs
+						+e.tab.js-tab.is-active
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+		+e.bottom
+			+e.wrap.wrap
+				+e.row.flex
+					+e.column.col-sm-6
+					+e.column.col-sm-6
+						+e.start-text.h6.mt100
+							| В новый, 33 театральный сезон, театр вошёл с 25 спектаклями в репертуаре, которые артисты показывают 15 000 зрителей ежегодно. Порядка 180 представлений по произведениям российских и зарубежных авторов – О. Генри, А.С. Пушкина, Г.Х. Андерсена, Р.Э. Распе, В.П. Катаева, Н.В. Думбадзе, А.М. Волкова, А. де Сент-Экзюпери, А.Н. Островского, Дж. Родари, Л.А. Филатова, Э.Т.А. Гофмана, С.Г. Козлова и др., профессиональные артисты и их юные коллеги дают ежегодно на двух сценах театра.
+						+e.bottom-desc.mt100
+							| Получив, профессиональный статус, перед театром открылся целый океан новых возможностей и перспектив, но его главной театральной традицией и яркой, индивидуальностью по-прежнему остается участие детей – артистов в совместных спектаклях, а также показ собственного репертуара. Детский театр «Золотой ключик» продолжил свое существование, но уже в новом, более перспективном и статусном качестве – студии при пятом государственном театре Республики Крым.
+						+e.start-text.h6.mt100
+							| Время неумолимо бежит вперед, диктуя новые сценарии жизни. Театр развивается, растет, но по-прежнему остается очень чистым, искренним и настоящим. «Ключики» -корифеи продолжают чтить и популяризировать добрые традиции, но при этом дают возможность новому поколению активно изучать тенденции, осознавать их и, постепенно внедрять в работу, тем самым давая возможность развития общего дела. 
+				+e.number-list.flex
+					+e.number-item.col-min-6.col-sm-3
+						+e.number-year.is-red 25 
+						+e.number-text.is-gray
+							| Наименований 
+							br
+							| в афише
+					+e.number-item.col-min-6.col-sm-3
+						+e.number-year.is-red 180 
+						+e.number-text.is-gray
+							| Cпектаклей 
+							br
+							| в год
+					+e.number-item.col-min-6.col-sm-3
+						+e.number-year.is-red 15 
+							+e.SPAN.number-year._small тыс
+						+e.number-text.is-gray
+							| Зрителей 
+							br
+							| в год
+					+e.number-item.col-min-6.col-sm-3
+						+e.number-year.is-red 173
+						+e.number-text.is-gray
+							| Премьеры 
+							br
+							| за 33 сезона
+				+e.row.flex
+					+e.column.col-sm-6
+					+e.column.col-sm-6
+						+e.bottom-quote.quote__
+							+e.icon
+								+icon('quote')
+							+e.text
+								| Мы всегда были, есть и будем театром, который стремится к поиску и экспериментам, базируясь при этом на традициях русского репертуарного театра. В нашем театре приветствуется реализация самых разных, порою революционных замыслов, осваивание новых пространств и интеграция новых жанров и видов искусства в сценическое пространство.
+							+e.avtor.p15.is-gray
+								| Андрей Пермяков
+						+e.start-text.h6.mt100
+							| Сегодня Крымский ТЮЗ является единственным театром юного зрителя на полуострове и пятым государственным театром Республики Крым. Коллектив сотрудничает с Союзом театральных деятелей РФ и ведущими российскими театрами, такими как Российский академический молодежный театр (РАМТ), Театр Наций, Екатеринбургский театр юного зрителя, Театр-студия «Грань», Самарский театр юного зрителя «СамАрт» и др. Его спектакли регулярно участвуют в крупных российских и международных фестивалях. Премьеры, выпущенные театром за последние годы, неоднократно отмечались Высшей театральной премией Крыма «Золотой грифон» и другими наградами. Театр продолжает развиваться, открывая новые направления деятельности: проведение театральных экскурсий, читок, творческих вечеров, коллабораций с местными группами и музыкантами. ТЮЗ является учредителем нескольких медиа-проектов: портала «Крымский театралЪ» и телевизионного шоу «Студия 22», которое раз в месяц выходит в эфире местного телевидения и на YouTube.
+		+e.gallery.gallery__.js-container
+			+e.wrap.wrap
+				+e.inside
+					+e.nav.flex
+						+e.nav-item.js-nav-item.is-active Фото
+						+e.nav-item.js-nav-item Видео
+					+e.tabs
+						+e.tab.js-tab.is-active
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')

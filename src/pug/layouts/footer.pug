@@ -14,13 +14,13 @@
 					+e.A.link(href="#")
 						+icon('instagram')
 			+e.column.col-min-12.col-sm-6
-				+e.UL.menu
-					+e.LI.menu-item
+				+e.UL.menu.js-toggle-container
+					+e.LI.menu-item.js-toggle-item
 						+e.menu-head
 							+e.A.menu-title(href="#") О театре
 							+e.menu-arrow
 								+icon('arrowSelect')
-						+e.UL.sub-menu
+						+e.UL.sub-menu.js-toggle-content
 							+e.LI.sub-item
 								a(href="#") Информация
 							+e.LI.sub-item
@@ -43,12 +43,12 @@
 						+e.A.menu-title(href="#") Спектакли
 					+e.LI.menu-item
 						+e.A.menu-title(href="#") Люди театра
-					+e.LI.menu-item
+					+e.LI.menu-item.js-toggle-item
 						+e.menu-head
 							+e.A.menu-title(href="#") Спектакли
 							+e.menu-arrow
 								+icon('arrowSelect')
-						+e.UL.sub-menu
+						+e.UL.sub-menu.js-toggle-content
 							+e.LI.sub-item
 								a(href="#") Детские
 							+e.LI.sub-item

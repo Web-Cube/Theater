@@ -4,49 +4,81 @@ var swiper = {
 
 	init: (e) => {
 		
-		let total = $('.swiper-slide').length - 2;
+		$(".js-slider").each(function(){
+			
+			let total = $('.swiper-slide').length - 2;
+			let slides = $(".js-slider").attr('data-slidesPerView');
+			let center = $(".js-slider").attr('data-centeredSlides');
 
-		var mainSlider = new Swiper(".main-slider", {
-			loop: true,
-			slidesPerView: 1,
+			var mainSlider = new Swiper($(this), {
+				loop: true,
+				slidesPerView: slides,
+				keyboardControl: true,
+				centeredSlides: center,
+				navigation: {
+					nextEl: ".swiper-next",
+					prevEl: ".swiper-prev",
+				},
+				pagination: {
+					type: "fraction",
+					renderFraction: function (currentClass, totalClass) {
+						return '<span class="' + currentClass + '"></span>' +
+							'<span class="swiper-time"><span class="swiper-time__loader" style="width:' + 1/total*100 + '%;"></span></span>' +
+							'<span class="' + totalClass + '"></span>';
+					},
+					el: ".swiper-pagination"
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+					},
+					769: {
+						slidesPerView: slides,
+					}
+				}
+			});
+
+			mainSlider.on('slideChange', function () {
+
+				$(".js-slider").each(function(){
+					let index = $(this).find('.swiper-slide-active').attr('data-swiper-slide-index')*1;
+					index = index+2;
+					let total = $(this).find('.swiper-pagination-total').html();
+					let width = index/total*100;
+
+					if ( index > total ) {
+						$(this).find('.swiper-time__loader').css('width',1/total*100+'%');
+					} else {
+						$(this).find('.swiper-time__loader').css('width',width+'%');
+					}
+				})
+
+			});
+			
+		});
+		
+		var galleryYears = new Swiper($('.gallery__years'), {
+			loop: false,
+			slidesPerView: 10,
 			keyboardControl: true,
-			autoplay: {
-    			delay: 5000,
-  			},
+			freeMode: true,
 			navigation: {
 				nextEl: ".swiper-next",
 				prevEl: ".swiper-prev",
 			},
-			pagination: {
-				type: "fraction",
-				renderFraction: function (currentClass, totalClass) {
-					let total = $('.swiper-slide').length - 2;
-					return '<span class="' + currentClass + '"></span>' +
-						'<span class="swiper-time"><span class="swiper-time__loader" style="width:' + 1/total*100 + '%;"></span></span>' +
-						'<span class="' + totalClass + '"></span>';
+			breakpoints: {
+				0: {
+					slidesPerView: 3,
 				},
-				el: ".swiper-pagination"
-			},
-			on: {
-				init: function () {
-					let total = $('.swiper-slide').length - 2;
-					let width = 1/total*100;
-					$('.swiper-time__loader').css('width', '33' );
+				479: {
+					slidesPerView: 5,
 				},
-			},
-		});
-		
-		mainSlider.on('slideChange', function () {
-			let index = this.activeIndex;
-			let total = $('.main-slider').find('.swiper-pagination-total').html();
-			let width = index/total*100;
-			
-			if ( index > total ) {
-				$('.swiper-time__loader').css('width',1/total*100+'%');
-			} else {
-				$('.swiper-time__loader').css('width',width+'%');
+				769: {
+					slidesPerView: 10,
+				}
 			}
 		});
+		
 		
 		var sliderNews = new Swiper('.news__slider', {
 			loop: false,

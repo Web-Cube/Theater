@@ -1,7 +1,7 @@
 extends ../layouts/base
 
 append vars
-	- title = 'Люди театра';
+	- title = 'Люди театра внутренняя';
 
 block content
 	include ../layouts/header
@@ -32,48 +32,117 @@ block content
 							| Заслуженный деятель искусств АРК 
 							br
 							| Лауреат Высшей театральной премии Крыма «Золотой грифон» (2016, 2017, 2019)
-						+e.content.content
-							h2
-								| Биография
-							p
-								| Родился в Орловской области 17 ноября 1979 года в семье двух режиссеров Нины и Олега Пермяковых. В 1981 году вместе с родителями переехал в Евпаторию. Учился в гимназии им. Ильи Сельвинского (1987 – 1997 г). С 1987 года занимался в театре «Золотой ключик», играл на сцене, писал стихи и песни. Кроме этого, занимался вокалом, хореографией, живописью и музыкой по классу гитары. В 2002 году окончил Киевский Национальный Университет культуры и искусств. С 2002 года служит в театре. Создатель и куратор Республиканского медиапортала о жизни театров в Крыму и Севастополе 
-								a(href="#") «Крымский театралЪ»
-								| . Художественный руководитель  Международного  фестиваля 
-								a(href="#") «Земля. Театр. Дети»
-								| . Создатель молодежного театра 
-								a(href="#") «Студия 22»
-								| . В ноябре 2017 года «Студия 22» отметила свое 10-летие. В октябре 2019 года театр получил профессиональный статус и стал первым в Крыму театром юного зрителя. 
-								br
-								br
-								| С 2014 года член СТД РФ. 
-								br
-								| С 2016 года член правления Крымского регионального отделения СТД РФ.
-							h2
-								| Лауреат фестивалей
-							p
-								| Международный фестиваль 
-								strong «Магия сцены», 
-								| Таллинн, Эстония;
-								br
-								| Международный фестиваль 
-								strong «Золотая репка», Самара, Россия;
-								br
-								| Международный фестиваль «Янтарная заря» (2013, 2015), Клайпеда, Литва;
-								br
-								| Международный фестиваль «Avanscena», Каунас, Литва;
-								br
-								| Международный фестиваль «Магия сцены 2013», Таллинн, Эстония;
-								br
-								| Международный фестиваль «ПоМост», Новокуйбышевск, Россия; 
-								br
-								| Международный фестиваль «Земля. Театр. Дети», Евпатория, Россия; 
-								br
-								| Лауреат Высшей театральной премии Крыма «Золотой грифон» в номинации «Лучшая режиссерская работа» за спектакль «Федора» (2016), Симферополь, Россия;
-								br
-								| Лауреат XVIII Международного фестиваля театра и кино «Боспорские агоны» в номинации «За блистательное воплощение русской народной сказки» за спектакль «ГУСИЛЕБЕДИ.RU», Керчь, Россия;
-								br
-								| Лауреат Высшей театральной премии Крыма «Золотой грифон» в номинации «Лучшая роль второго плана» за спектакль «Питер Пэн» (2017), Симферополь, Россия;
-								br 
-								| Лауреат фестиваля «Сказочное королевство» в номинации «Королевский злодей» за роль Бабы-Яги в спектакле «ГУСИЛЕБЕДИ.RU» (2017), Севастополь, Россия)
-								br
-								| Лауреат Высшей театральной премии Крыма «Золотой грифон» в номинации «Лучший режиссер» за спектакль «Женитьба Бальзаминова» и «Лучший спектакль для детей и молодежи» за постановку спектакля «Собака» (2019), Симферополь, Россия.
+						+e.content.js-toggle-container
+							+e.content-item.js-toggle-item
+								+e.content-head
+									+e.H2.content-tittle.h2
+										| Биография
+									+e.content-arrow
+										+icon('arrowSelect')
+								+e.content-info.js-toggle-content
+									p
+										| Родился в Орловской области 17 ноября 1979 года в семье двух режиссеров Нины и Олега Пермяковых. В 1981 году вместе с родителями переехал в Евпаторию. Учился в гимназии им. Ильи Сельвинского (1987 – 1997 г). С 1987 года занимался в театре «Золотой ключик», играл на сцене, писал стихи и песни. Кроме этого, занимался вокалом, хореографией, живописью и музыкой по классу гитары. В 2002 году окончил Киевский Национальный Университет культуры и искусств. С 2002 года служит в театре. Создатель и куратор Республиканского медиапортала о жизни театров в Крыму и Севастополе 
+										a(href="#") «Крымский театралЪ»
+										| . Художественный руководитель  Международного  фестиваля 
+										a(href="#") «Земля. Театр. Дети»
+										| . Создатель молодежного театра 
+										a(href="#") «Студия 22»
+										| . В ноябре 2017 года «Студия 22» отметила свое 10-летие. В октябре 2019 года театр получил профессиональный статус и стал первым в Крыму театром юного зрителя. 
+										br
+										br
+										| С 2014 года член СТД РФ. 
+										br
+										| С 2016 года член правления Крымского регионального отделения СТД РФ.
+							+e.content-item.js-toggle-item
+								+e.content-head
+									+e.H2.content-tittle.h2
+										| Лауреат фестивалей
+									+e.content-arrow
+										+icon('arrowSelect')
+								+e.content-info.js-toggle-content
+									p
+										| Международный фестиваль 
+										strong «Магия сцены», 
+										| Таллинн, Эстония;
+									p
+										| Международный фестиваль 
+										strong «Золотая репка», Самара, Россия;
+									p
+										| Международный фестиваль «Янтарная заря» (2013, 2015), Клайпеда, Литва;
+									p
+										| Международный фестиваль «Avanscena», Каунас, Литва;
+									p
+										| Международный фестиваль «Магия сцены 2013», Таллинн, Эстония;
+									p
+										| Международный фестиваль «ПоМост», Новокуйбышевск, Россия; 
+									p
+										| Международный фестиваль «Земля. Театр. Дети», Евпатория, Россия; 
+									p
+										| Лауреат Высшей театральной премии Крыма «Золотой грифон» в номинации «Лучшая режиссерская работа» за спектакль «Федора» (2016), Симферополь, Россия;
+									p
+										| Лауреат XVIII Международного фестиваля театра и кино «Боспорские агоны» в номинации «За блистательное воплощение русской народной сказки» за спектакль «ГУСИЛЕБЕДИ.RU», Керчь, Россия;
+									p
+										| Лауреат Высшей театральной премии Крыма «Золотой грифон» в номинации «Лучшая роль второго плана» за спектакль «Питер Пэн» (2017), Симферополь, Россия;
+									p 
+										| Лауреат фестиваля «Сказочное королевство» в номинации «Королевский злодей» за роль Бабы-Яги в спектакле «ГУСИЛЕБЕДИ.RU» (2017), Севастополь, Россия)
+									p
+										| Лауреат Высшей театральной премии Крыма «Золотой грифон» в номинации «Лучший режиссер» за спектакль «Женитьба Бальзаминова» и «Лучший спектакль для детей и молодежи» за постановку спектакля «Собака» (2019), Симферополь, Россия.
+		+e.gallery.gallery__.js-container
+			+e.wrap.wrap
+				+e.inside
+					+e.nav.flex
+						+e.nav-item.js-nav-item.is-active Фото
+						+e.nav-item.js-nav-item Видео
+					+e.tabs
+						+e.tab.js-tab.is-active
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+						//+e.tab
+							+e.slider.swiper-container.js-slider#video(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.item
+											iframe(width='1280', height='720', src='https://www.youtube.com/embed/n0JGGvzwFbU', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+									+e.slide.swiper-slide
+										+e.item
+											iframe(width='1280', height='720', src='https://www.youtube.com/embed/n0JGGvzwFbU', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+									+e.slide.swiper-slide
+										+e.item
+											iframe(width='1280', height='720', src='https://www.youtube.com/embed/n0JGGvzwFbU', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+									+e.slide.swiper-slide
+										+e.item
+											iframe(width='1280', height='720', src='https://www.youtube.com/embed/n0JGGvzwFbU', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')

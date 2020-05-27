@@ -27,32 +27,6 @@
 	.modals__close{
 		z-index: 9999;
 	}
-
-	figure{
-		position: relative;
-		&:before{
-			content: '';
-			display: block;
-			position: absolute;
-			box-sizing: border-box;
-			border-width: 6rem;
-			border-color: rgba(255, 255, 255, 0.502);
-			border-style: solid;
-			top: 79rem;
-			left: 56rem;
-			right: 53rem;
-			bottom: 79rem;
-			z-index: 200;
-			pointer-events: none;
-			border-radius: 5rem;
-		}	
-
-		@include max-screen($large_mobile) {
-			&:before{
-				display: none;
-			}
-		}	
-	}
 }
 
 .mfp-content{
@@ -67,16 +41,9 @@
 
 .mfp-figure {
 	.modals__close {
-		right: -15rem;
-		top: -20rem;
-		background: none;
-		fill: #fff;
-		border: 0;
-		width: 60rem;
-
-		@include max-screen($large_mobile) {
-			top: -10rem;
-		}
+		stroke: #fff;
+		right: 0;
+		top: 0;
 	}
 }
 
