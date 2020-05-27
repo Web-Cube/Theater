@@ -1,0 +1,30 @@
+.play {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	transition: ease .2s;
+	&__btn {
+		width: 66rem;
+		min-width: 66rem;
+		padding-left: 5rem;
+		height: 66rem;
+		border-radius: 100%;
+		border: 1px solid $gray;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 20rem;
+	}
+	&__icon {
+		width: 12rem;
+		height: 14rem;
+		transition: ease .2s;
+		fill: $red;
+	}
+	&:hover {
+		color: $red;
+		.play__icon {
+			transform: scale(1.5);
+		}
+	}
+}

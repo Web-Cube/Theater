@@ -110,6 +110,23 @@ var swiper = {
 				},
 			},
 		});
+		
+		var sliderNews = new Swiper('.js-slider-groups', {
+			loop: true,
+			slidesPerView: 2,
+			navigation: {
+				nextEl: ".nav-slider__arrow_next",
+				prevEl: ".nav-slider__arrow_prev",
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+				769: {
+					slidesPerView: 2
+				}
+			},
+		});
 
 	}
 

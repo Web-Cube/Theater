@@ -1,0 +1,103 @@
+.acting-groups {
+	margin-top: 150rem;
+	&__head {
+		flex-wrap: nowrap;
+	}
+	&__slider {
+		margin: 60rem -5rem 0 -5rem;
+	}
+	&__slide {
+		padding: 0 5rem;
+	}
+	&__item {
+		position: relative;
+		color: #fff;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(51.74deg, #000000 -24.96%, rgba(0, 0, 0, 0) 51.7%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+		}
+	}
+	&__item-title, &__bottom {
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		width: 100%;
+		padding-left: 50rem;
+		padding-right: 30rem;
+	}
+	&__item-title {
+		top: 50rem;
+	}
+	&__bottom {
+		bottom: 40rem;
+	}
+	&__ava {
+		width: 100rem;
+		min-width: 100rem;
+		height: 100rem;
+		border-radius: 100%;
+		margin-right: 20rem;
+	}
+	&__position {
+		margin-bottom: 5rem;
+	}
+	&__icon {
+		width: 26px;
+		height: 26px;
+		border-radius: 100%;
+		background: rgba(#fff, .3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10rem;
+		fill: #fff;
+		cursor: pointer;
+		.icon-info {
+			width: 2px;
+			height: 12px;
+		}
+	}
+}
+
+@include max-screen($large_tablet) {
+	.acting-groups {
+		&__item-title, &__bottom {
+			padding-left: 20px;
+		}
+		&__item-title {
+			top: 20px;
+		}
+		&__bottom {
+			bottom: 20px;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.acting-groups {
+		margin-top: 30px;
+		&__slider {
+			margin-top: 30px;
+		}
+		&__item {
+			overflow: hidden;
+		}
+		&__foto {
+			width: 200%;
+			margin-left: -50%;
+			max-width: none;
+		}
+		&__nav {
+			min-width: 80px;
+			justify-content: flex-end;
+		}
+	}
+}
+
+
+
