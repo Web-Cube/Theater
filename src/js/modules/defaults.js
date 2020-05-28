@@ -97,6 +97,22 @@ var defaults = {
 		}
 		
 	},
+	
+	repertoireFilter: () => {
+		
+		$(".js-filter-item").click(function(){
+			let name = $(this).data('filter');
+			
+			if ( name == 'all' ) {
+				$('.js-filter-select').show(300);
+			} else {
+				$('.js-filter-select').not('.js-filter-select'+name).hide(300);
+				$('.js-filter-select'+name).show(300);
+			}
+			
+		});
+		
+	},
 
 	init: () => {
 
@@ -105,6 +121,7 @@ var defaults = {
 		defaults.quantityProducts();
 		defaults.attachFile();
 		defaults.toggleSidebar();
+		defaults.repertoireFilter();
 		
 		$('.js-fixed').each(function(){
 			$('.main-wrap').css('overflow','visible');

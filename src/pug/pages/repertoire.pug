@@ -1,0 +1,167 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Спектакли';
+
+block content
+	include ../layouts/header
+	+b.page
+		+e.wrap.wrap
+			+e.UL.breadcrumbs.breadcrumbs__.flex
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					| Спектакли
+	+b.repertoire._page
+		+e.wrap.wrap
+			+e.H1.title.h2.b Спектакли
+			+e.head
+				+e.nav.nav-dots__.js-mobile-select
+					+e.head
+						+e.label.js-mobile-label
+						+e.icon
+							+icon('arrowSelect')
+					+e.list.flex
+						+e.A.item.js-cat-item.js-filter-item.js-mobile-item.is-active(data-filter="all")
+							| Все
+						+e.item.js-cat-item.js-filter-item.js-mobile-item(data-filter=".for-children") Для детей
+						+e.item.js-cat-item.js-filter-item.js-mobile-item(data-filter=".for-adults") Для взрослых
+						+e.item.js-cat-item.js-filter-item.js-mobile-item(data-filter=".children-play") Спектакли, где играют дети
+			+e.inside
+				+e.list.flex
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-children
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview1.jpg")
+							+e.H3.item-title.h5
+								| «Мюнхгаузен»
+							+e.desc.p.is-gray
+								| Для детей
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-adults
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview2.jpg")
+							+e.H3.item-title.h5
+								| «Снежная королева» 
+							+e.desc.p.is-gray
+								| Для взрослых
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.children-play
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview3.jpg")
+							+e.H3.item-title.h5
+								| «Сказ про Федота-стрельца» 
+							+e.desc.p.is-gray
+								| Для детей (в спектакле играют дети)
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-adults
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview4.jpg")
+							+e.H3.item-title.h5
+								| «Плуфт. или маленький призрак»
+							+e.desc.p.is-gray
+								| Для взрослых
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-children
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview1.jpg")
+							+e.H3.item-title.h5
+								| «Мюнхгаузен»
+							+e.desc.p.is-gray
+								| Для детей
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-adults
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview2.jpg")
+							+e.H3.item-title.h5
+								| «Снежная королева» 
+							+e.desc.p.is-gray
+								| Для взрослых
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.children-play
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview3.jpg")
+							+e.H3.item-title.h5
+								| «Сказ про Федота-стрельца» 
+							+e.desc.p.is-gray
+								| Для детей (в спектакле играют дети)
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-adults
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview4.jpg")
+							+e.H3.item-title.h5
+								| «Плуфт. или маленький призрак»
+							+e.desc.p.is-gray
+								| Для взрослых
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-children
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview1.jpg")
+							+e.H3.item-title.h5
+								| «Мюнхгаузен»
+							+e.desc.p.is-gray
+								| Для детей
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-adults
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview2.jpg")
+							+e.H3.item-title.h5
+								| «Снежная королева» 
+							+e.desc.p.is-gray
+								| Для взрослых
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.children-play
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview3.jpg")
+							+e.H3.item-title.h5
+								| «Сказ про Федота-стрельца» 
+							+e.desc.p.is-gray
+								| Для детей (в спектакле играют дети)
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-adults
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview4.jpg")
+							+e.H3.item-title.h5
+								| «Плуфт. или маленький призрак»
+							+e.desc.p.is-gray
+								| Для взрослых
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-children
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview1.jpg")
+							+e.H3.item-title.h5
+								| «Мюнхгаузен»
+							+e.desc.p.is-gray
+								| Для детей
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-adults
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview2.jpg")
+							+e.H3.item-title.h5
+								| «Снежная королева» 
+							+e.desc.p.is-gray
+								| Для взрослых
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.children-play
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview3.jpg")
+							+e.H3.item-title.h5
+								| «Сказ про Федота-стрельца» 
+							+e.desc.p.is-gray
+								| Для детей (в спектакле играют дети)
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-adults
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview4.jpg")
+							+e.H3.item-title.h5
+								| «Плуфт. или маленький призрак»
+							+e.desc.p.is-gray
+								| Для взрослых
+					+e.column.col-min-6.col-sm-4.col-md-3.js-filter-select.for-children
+						+e.A.item(href="#")
+							+e.preview
+								img(src="/img/repertoire__preview1.jpg")
+							+e.H3.item-title.h5
+								| «Мюнхгаузен»
+							+e.desc.p.is-gray
+								| Для детей

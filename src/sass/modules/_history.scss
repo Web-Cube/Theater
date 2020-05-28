@@ -18,6 +18,9 @@
 			line-height: 50/35*1;
 		}
 	}
+	&__title {
+		max-width: 560rem;
+	}
 	&__play {
 		margin-top: 85rem;
 	}
@@ -54,6 +57,9 @@
 		}
 		&-text {
 			line-height: 35/20*1;
+			a {
+				text-decoration: underline;
+			}
 		}
 	}
 	&__year {
@@ -61,6 +67,9 @@
 		line-height: 90/120*1;
 		font-weight: 300;
 		position: relative;
+		&_small {
+			font-size: 60rem;
+		}
 	}
 	&__desc {
 		position: relative;
@@ -69,6 +78,9 @@
 		&-list {
 			padding-top: 100rem;
 			margin-bottom: 150rem;
+			.history__year {
+				margin-bottom: 25rem;
+			}
 		}
 		&-item {
 			margin-top: 50rem;
@@ -80,6 +92,7 @@
 			font-weight: 300;
 			&_small {
 				font-size: 45rem;
+				margin-left: -15rem;
 			}
 		}
 		&-text {
@@ -89,6 +102,9 @@
 	}
 	&__gallery {
 		margin-top: 100rem;
+		&_bottom {
+			margin-top: 150rem;
+		}
 	}
 	&__bottom {
 		&-desc {
@@ -99,6 +115,9 @@
 			h3, h2 {
 				margin-bottom: 60rem;
 			}
+		}
+		&-img {
+			margin-top: 150rem;
 		}
 	}
 	.mt100 {
@@ -159,6 +178,9 @@
 	}
 	&__premium {
 		margin-top: 100rem;
+	}
+	&__alt {
+		margin-top: 30rem;
 	}
 }
 
@@ -221,6 +243,10 @@
 @include max-screen($large_mobile) {
 	.history {
 		margin-top: 30px;
+		&__date {
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
 		&__title {
 			br {
 				display: none;
@@ -233,6 +259,15 @@
 				line-height: 25px;
 				font-weight: 600;
 				letter-spacing: normal;
+			}
+			&-img {
+				overflow: hidden;
+				margin-bottom: -20px;
+				img {
+					width: 160%;
+					margin-left: -30%;
+					max-width: none;
+				}
 			}
 		}
 		&__start {
@@ -257,6 +292,8 @@
 		&__year {
 			font-size: 25px;
 			line-height: 20px;
+			font-weight: 500;
+			margin-bottom: 10px;
 		}
 		&__text {
 			br {
@@ -267,6 +304,9 @@
 			&-list {
 				padding-top: 0;
 				margin-bottom: 30px;
+				.history__year {
+					margin-bottom: 10px;
+				}
 			}
 			&-item {
 				margin-top: 30px;
@@ -276,6 +316,9 @@
 				font-size: 25px;
 				font-weight: 500;
 				margin-bottom: 10px;
+				&_small {
+					margin-left: 0;
+				}
 			}
 			&-text {
 				font-size: 15px;
@@ -288,13 +331,31 @@
 				line-height: 25px;
 				font-weight: 600;
 				padding-bottom: 30px;
+				a {
+					text-decoration: underline;
+				}
 				h3, h2 {
 					margin-bottom: 30px;
+				}
+			}
+			&-img {
+				margin-top: 50px;
+				overflow: hidden;
+				img {
+					max-width: none;
+					width: 160%;
+					margin-left: -30%;
 				}
 			}
 		}
 		&__gallery {
 			margin-top: 30px;
+			&_bottom {
+				margin-top: 50px;
+			}
+		}
+		&__alt {
+			margin-top: 20px;
 		}
 		.mt100 {
 			margin-top: 30px;

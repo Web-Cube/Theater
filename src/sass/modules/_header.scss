@@ -1,5 +1,6 @@
 .header {
-	
+	position: relative;
+	z-index: 50;
 	&__row {
 		padding: 50rem 0 50rem 0;
 		&_border {
@@ -102,6 +103,9 @@
 		}
 		&__burger {
 			display: block;
+		}
+		&__column {
+			width: auto;
 		}
 	}
 }

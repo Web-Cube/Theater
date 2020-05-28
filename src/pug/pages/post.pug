@@ -1,0 +1,121 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Новость';
+
+block content
+	include ../layouts/header
+	+b.page
+		+e.wrap.wrap
+			+e.UL.breadcrumbs.breadcrumbs__.flex
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					a(href="#") Новости
+				+e.LI.item
+					| Как купить билет онлайн в крымский театр юного зрителяе
+	+b.history
+		+e.top
+			+e.wrap.wrap
+				+e.row.flex
+					+e.top-col.col-sm-6
+						+e.H1.title.h2.b
+							| Как купить билет онлайн в крымский тюз
+					+e.top-col.col-sm-6
+						+e.top-desc
+							| Театр «Золотой ключик» открыл свои двери 31 мая 1987 года, став осуществившейся мечтой двух молодых режиссеров Нины и Олега Пермяковых. Уже в 1995 «Золотой ключик» стал Международным детским центром-комплексом, а в 2014 получил новое звание – Международный центр театрального искусства!
+				+e.top-img.mt100
+					img(src="/img/post__img1.jpg")
+		+e.start
+			+e.wrap.wrap
+				+e.row.flex._start
+					+e.column.col-sm-6
+						+e.date.h6
+							| 25 марта 2013
+					+e.column.col-sm-6
+						+e.start-text.h6
+							| В далеких 80-х «Золотой ключик» был только мечтой двух молодых режиссеров – Олега и Нины Пермяковых, которые сразу по окончании Орловского филиала Московского государственного института культуры (ныне – ОГИИК) переехали в Евпаторию. Чем жила и горела эта пара талантливых личностей? Их мечтой был уникальный театр — ДЕТСКИЙ театр по принципу профессионального, с большим количеством разножанровых трупп, где дети-артисты со взрослыми-профессионалами работают на один общий результат – спектакль! Этот театр еще до своего появления на свет существовал в мыслях и сердцах его «родителей». Олег и Нина Пермяковы представляли его до мельчайших подробностей: со всеми цехами, мастерскими, службами и маленькими артистами…. Тогда основатели этого евпаторийского чуда еще не знали, что их детищу предстоит стать не просто культурным центром, но и целой лабораторией для педагогов театральных факультетов, профессоров, режиссеров и актеров, руководителей театров из России и других стран мира, занимающихся изучением современного театра и феномена «Золотого ключика» в частности.
+							br
+							br
+							| Сегодня на базе центра работают цех оформления театрального костюма и изготовления головных уборов, бутафорский, пошивочный, монтировочный, костюмерный, декорационный, гримерно-постижерский цехи, студия звукозаписи, продакшн-студия «GK-promo», детский пресс-центр «Золотые перья», изостудии и многое другое. Работниками центра ведется крупный медиапроект — республиканский интернет-ресурс 
+							a(href="https://c-teatral.ru" target="_blank") Крымский театралЪ 
+							| (c-teatral.ru).
+				+e.number-list.flex
+					+e.number-item.col-min-6.col-sm-3
+						+e.year.is-red 30 
+						+e.number-text.is-gray
+							| Наименований 
+							br
+							| в афише
+					+e.number-item.col-min-6.col-sm-3
+						+e.year.is-red 200 
+						+e.number-text.is-gray
+							| Cпектаклей 
+							br
+							| в год
+					+e.number-item.col-min-6.col-sm-3
+						+e.year.is-red 50 
+							+e.SPAN.number-year._small тыс
+						+e.number-text.is-gray
+							| Зрителей 
+							br
+							| в год
+					+e.number-item.col-min-6.col-sm-3
+						+e.year.is-red 166
+						+e.number-text.is-gray
+							| Премьер 
+							br
+							| за 30 сезонов
+				+e.row.flex
+					+e.column.col-sm-6
+					+e.column.col-sm-6
+						+e.img.IMG(src="/img/post__img2.jpg")
+						+e.alt.h6.is-gray
+							| Возможный вариант “названия фото” 
+						+e.bottom-desc.mt100
+							| Сегодня на базе центра работают цех оформления театрального костюма и изготовления головных уборов, бутафорский, пошивочный, монтировочный, костюмерный, декорационный, гримерно-постижерский цехи, студия звукозаписи, продакшн-студия «GK-promo», детский пресс-центр «Золотые перья», изостудии и многое другое. Работниками центра ведется крупный медиапроект — республиканский интернет-ресурс 
+							a(href="https://c-teatral.ru" target="_blank") Крымский театралЪ  
+							| (c-teatral.ru).
+				+e.bottom-img
+					img(src="/img/post__img3.jpg")
+				+e.alt.h6.is-gray
+					| Возможный вариант “названия фото” 
+		+e.gallery._bottom.gallery__.js-container
+			+e.wrap.wrap
+				+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+					.swiper-wrapper.js-gallery
+						+e.slide.swiper-slide
+							+e.A.item(href="/app/img/gallery__slide.jpg")
+								img(src="/img/gallery__slide.jpg")
+						+e.slide.swiper-slide
+							+e.A.item(href="/app/img/gallery__slide2.jpg")
+								img(src="/img/gallery__slide2.jpg")
+						+e.slide.swiper-slide
+							+e.A.item(href="/app/img/gallery__slide3.jpg")
+								img(src="/img/gallery__slide3.jpg")
+						+e.slide.swiper-slide
+							+e.A.item(href="/app/img/gallery__slide.jpg")
+								img(src="/img/gallery__slide.jpg")
+						+e.slide.swiper-slide
+							+e.A.item(href="/app/img/gallery__slide2.jpg")
+								img(src="/img/gallery__slide2.jpg")
+						+e.slide.swiper-slide
+							+e.A.item(href="/app/img/gallery__slide3.jpg")
+								img(src="/img/gallery__slide3.jpg")
+						+e.slide.swiper-slide
+							+e.A.item(href="/app/img/gallery__slide.jpg")
+								img(src="/img/gallery__slide.jpg")
+						+e.slide.swiper-slide
+							+e.A.item(href="/app/img/gallery__slide2.jpg")
+								img(src="/img/gallery__slide2.jpg")
+						+e.slide.swiper-slide
+							+e.A.item(href="/app/img/gallery__slide3.jpg")
+								img(src="/img/gallery__slide3.jpg")
+					+e.inside
+						+e.bottom.flex._vertical._justify
+							+e.pagination.swiper-pagination
+							+e.arrows.nav-slider__.flex
+								+e.arrow._prev.swiper-prev
+									+icon('prev')
+								+e.arrow._next.swiper-next
+									+icon('next')
