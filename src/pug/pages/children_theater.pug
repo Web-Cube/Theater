@@ -85,3 +85,24 @@ block content
 							| В 33 театральном сезоне, детский театр «Золотой ключик», уже в качестве студии при Крымском ТЮЗе, выпустит еще 3 премьерных спектакля в постановке Ирины Фаустовой, Елены Шарпило и Лили Муслединовой. Кроме этого запланирован ряд восстановлений и участие в большом совместном спектакле в рамках новогодней кампании 2020/2021 годов.
 
 				include ../layouts/acting-groups
+		include ../layouts/repertoire
+		+e.docs.docs__
+			+e.wrap.wrap
+				+e.H2.title.h2 Документы
+				+e.list.flex
+					+e.A.item.col-min-6.col-sm-3(href="#")
+						+e.name
+							| Распоряжение Совета министров Республики Крым о создании театра
+						+e.download.download__.is-red
+							+e.icon
+								+icon('arrowDownload')
+							+e.text.p.b
+								| Скачать
+					+e.A.item.col-min-6.col-sm-3(href="#")
+						+e.name
+							| Устав
+						+e.download.download__.is-red
+							+e.icon
+								+icon('arrowDownload')
+							+e.text.p.b
+								| Скачать

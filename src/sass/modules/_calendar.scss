@@ -1,0 +1,67 @@
+.calendar {
+	cursor: pointer;
+	position: relative;
+	&__head {
+		display: flex;
+		align-items: center;
+	}
+	&__icon {
+		width: 14rem;
+		height: 7rem;
+		stroke: $red;
+		fill: none;
+		stroke-width: 2px;
+		margin-left: 15rem;
+		transition: ease .2s;
+	}
+	&__list {
+		opacity: 0;
+		transform: translateY(-10px);
+		visibility: hidden;
+	}
+	&.is-active {
+		.calendar__icon {
+			transform: rotate(-180deg);
+		}
+		.calendar__list {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	}
+	&__list {
+		position: absolute;
+		top: 100%;
+		width: 230rem;
+		z-index: 100;
+		border: 1px solid #D4D4D5;
+		border-radius: 5px;
+		right: -30rem;
+		margin-top: 15rem;
+		padding: 30rem 0 15rem 30rem;
+		background: #fff;
+		transition: ease .2s;
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			right: 30rem;
+			top: -14px;
+			border: 6px solid transparent;
+		}
+		&:before {
+			border-bottom: 8px solid #D4D4D5;
+		}
+		&:after {
+			margin-top: 1px;
+			border-bottom: 8px solid #fff;
+		}
+	}
+	&__item {
+		width: 33.33%;
+		font-size: 15rem;
+		margin-bottom: 15rem;
+		&:hover, &.is-active {
+			color: $red;
+		}
+	}
+} 

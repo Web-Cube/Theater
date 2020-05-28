@@ -1,4 +1,7 @@
 .docs {
+	&__title {
+		margin-bottom: 60rem;
+	}
 	&__item {
 		display: block;
 		position: relative;
@@ -37,6 +40,9 @@
 
 @include max-screen($large_mobile) {
 	.docs {
+		&__title {
+			margin-bottom: 30px
+		}
 		&__item {
 			width: 100%;
 			min-height: 160px;

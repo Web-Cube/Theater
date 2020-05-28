@@ -73,16 +73,16 @@ var defaults = {
 	
 	toggleSidebar: () => {
 		
-		$('.team__nav-item').click(function(){
+		$('.js-cat-item').click(function(){
 			let text = $(this).text(),
 				index = $(this).index();
 			if ( $(this).hasClass('is-active') ) {
 			} else {
-				$('.team__nav-item.is-active').removeClass('is-active');
+				$('.js-cat-item.is-active').removeClass('is-active');
 				$(this).addClass('is-active');
 				$(this).closest('.js-mobile-select').find('.js-mobile-label').text(text);
-				$('.team__tab:visible').hide();
-				$('.team__tab:eq(' + index + ')').fadeIn(500);
+				$('.js-cat-tab.is-active').removeClass('is-active');
+				$('.js-cat-tab:eq(' + index + ')').addClass('is-active');
 			}
 		});
 		
@@ -120,6 +120,30 @@ var defaults = {
 				container.find('.js-tab.is-active').removeClass('is-active');
 				container.find('.js-tab:eq(' + index + ')').addClass('is-active');
 			}
+		});
+		
+		if ( $(window).innerWidth() < 769 ) {
+		
+			$(".acting-groups__icon-btn").click(function(){
+				$(".acting-groups__tooltip").toggleClass('is-active');
+			});
+
+			$(".acting-groups__tooltip-close").click(function(){
+				$(".acting-groups__tooltip").removeClass('is-active');
+			});
+			
+		};
+		
+		$('.calendar').each(function(){
+			$('.calendar__label').text( $('.calendar__item.is-active').text() );
+		}).click(function(){
+			$(this).toggleClass('is-active');
+		});
+		
+		$('.calendar__item').click(function(){
+			$('.calendar__item.is-active').removeClass('is-active');
+			$(this).addClass("is-active");
+			$('.calendar__label').text( $(this).text() );
 		});
 
 	}

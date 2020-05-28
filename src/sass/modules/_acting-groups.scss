@@ -5,6 +5,7 @@
 	}
 	&__slider {
 		margin: 60rem -5rem 0 -5rem;
+		padding-bottom: 500rem;
 	}
 	&__slide {
 		padding: 0 5rem;
@@ -24,7 +25,6 @@
 	}
 	&__item-title, &__bottom {
 		position: absolute;
-		z-index: 2;
 		left: 0;
 		width: 100%;
 		padding-left: 50rem;
@@ -57,9 +57,92 @@
 		margin-top: 10rem;
 		fill: #fff;
 		cursor: pointer;
+		position: relative;
 		.icon-info {
 			width: 2px;
 			height: 12px;
+		}
+		&-btn {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__tooltip {
+		background: #fff;
+		border: 1px solid rgba(109, 110, 113, 0.3);
+		border-radius: 3px;
+		width: 440rem;
+		padding: 35rem 30rem;
+		position: absolute;
+		z-index: 1000;
+		top: 100%;
+		left: -40rem;
+		margin-top: 15rem;
+		color: #000;
+		transition: ease .3s;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-10rem);
+		&.is-active {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+		&-close {
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			width: 16px;
+			height: 16px;
+			stroke: #000;
+			stroke-width: 1.5;
+		}
+		p {
+			font-size: 15rem;
+			line-height: 20rem;
+			&:not(:last-child) {
+				margin-bottom: 20rem;
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			left: 45rem;
+			top: -14rem;
+			border: 6rem solid transparent;
+			border-bottom: 8rem solid #fff;
+		}
+	}
+}
+
+@media (min-width: 769px) {
+	.acting-groups {
+		&__icon {
+			&:hover {
+				.acting-groups__tooltip {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+			}
+		}
+		&__tooltip {
+			&-close {
+				display: none;
+			}
+		}
+	}
+}
+
+@include max-screen($large_desktop) {
+	.acting-groups {
+		&__tooltip {
+			&:before {
+				left: 48rem;
+			}
 		}
 	}
 }
@@ -84,20 +167,44 @@
 		&__slider {
 			margin-top: 30px;
 		}
-		&__item {
-			overflow: hidden;
-		}
 		&__foto {
-			width: 200%;
-			margin-left: -50%;
-			max-width: none;
+			overflow: hidden;
+			img {
+				width: 200%;
+				margin-left: -50%;
+				max-width: none;
+			}
 		}
 		&__nav {
 			min-width: 80px;
 			justify-content: flex-end;
 		}
+		&__tooltip {
+			left: -105px;
+			width: 300px;
+			padding: 30px 15px 15px;
+			&-close {
+				display: block;
+			}
+			&:before {
+				left: 112px;
+			}
+			p {
+				font-size: 12px;
+			}
+		}
+		&__slide {
+			position: relative;
+		}
 	}
 }
 
+@include max-screen(359px) {
+	.acting-groups {
+		&__tooltip {
+			width: 260px;
+		}
+	}
+}
 
 

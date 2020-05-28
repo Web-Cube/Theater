@@ -92,11 +92,13 @@
 	}
 	&__bottom {
 		&-desc {
-			margin-top: 100rem;
 			font-size: 30rem;
 			line-height: 40/30*1;
 			padding-bottom: 40rem;
 			border-bottom: 3px solid $red;
+			h3, h2 {
+				margin-bottom: 60rem;
+			}
 		}
 	}
 	.mt100 {
@@ -117,6 +119,78 @@
 			position: relative;
 		}
 	}
+	.repertoire {
+		background: rgba(109, 110, 113, 0.03);
+		padding: 150rem 0;
+		margin-top: -350rem;
+	}
+	&__docs {
+		margin-top: 150rem;
+	}
+	&__festival {
+		&-years {
+			display: inline-flex;
+			align-items: center;
+			padding-top: 100rem;
+			border-top: 1px solid $gray;
+			margin-right: 60rem;
+			.history__year {
+				margin-right: 40rem;
+				letter-spacing: -0.02em;
+				margin-left: -8rem;
+			}
+		}
+		&-content {
+			h3 {
+				font-size: 30rem;
+				line-height: 1;
+				&:not(:first-child) {
+					margin-top: 70rem;
+				}
+			}
+			p {
+				font-size: 20rem;
+				line-height: 35/20*1;
+				&:not(:first-child) {
+					margin-top: 34rem;
+				}
+			}
+		}
+	}
+	&__premium {
+		margin-top: 100rem;
+	}
+}
+
+@include max-screen(1800px) {
+	.history {
+		&__festival {
+			&-years {
+				flex-wrap: wrap;
+				.history__year {
+					margin-right: 0;
+				}
+			}
+			&-desc {
+				margin-top: 25px;
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@include max-screen($large_tablet) {
+	.history {
+		&__festival {
+			&-years {
+				.history__year {
+					font-size: 100rem;
+				}
+			}
+		}
+	}
 }
 
 @include max-screen($small_tablet) {
@@ -132,6 +206,13 @@
 				&:after {
 					width: 100%;
 				}
+			}
+		}
+		&__festival {
+			&-years {
+				display: flex;
+				margin-right: 0;
+				margin-bottom: 50px;
 			}
 		}
 	}
@@ -207,6 +288,9 @@
 				line-height: 25px;
 				font-weight: 600;
 				padding-bottom: 30px;
+				h3, h2 {
+					margin-bottom: 30px;
+				}
 			}
 		}
 		&__gallery {
@@ -214,6 +298,49 @@
 		}
 		.mt100 {
 			margin-top: 30px;
+		}
+		.repertoire {
+			margin-top: -420rem;
+			padding: 50px 0;
+		}
+		&__docs {
+			margin-top: 50px;
+		}
+		&__festival {
+			&-years {
+				padding-top: 30px;
+				justify-content: space-between;
+				.history__year {
+					font-size: 25px;
+					font-weight: 500;
+				}
+			}
+			&-desc {
+				margin-top: 0;
+				max-width: 130px;
+				font-size: 15px!important;
+				line-height: 1!important;
+			}
+			&-content {
+				h3 {
+					font-size: 15px;
+					line-height: 20px;
+					&:not(:first-child) {
+						margin-top: 50px;
+					}
+				}
+				p {
+					font-size: 15px;
+					line-height: 25px;
+					&:not(:first-child) {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+		&__premium {
+			margin-top: 50px;
+			margin-bottom: 20px;
 		}
 	}
 }

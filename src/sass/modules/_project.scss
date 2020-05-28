@@ -1,0 +1,18 @@
+.project {
+	margin-top: 150rem;
+	&__title {
+		margin-bottom: 60rem;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.project {
+		margin-top: 30px;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__gallery {
+			padding-top: 0;
+		}
+	}
+}

@@ -64,7 +64,7 @@
 			stroke-width: 2px;
 		}
 		&.is-active {
-			.sidebar__nav-icon {
+			.team__nav-icon {
 				stroke: $red;
 				transform: rotate(-180deg);
 			}
@@ -109,8 +109,14 @@
 		display: block;
 	}
 	&__tab {
-		&:not(:first-child) {
-			display: none;
+		height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: ease .3s;
+		&.is-active {
+			height: auto;
+			opacity: 1;
+			overflow: visible;
 		}
 	}
 	&__single {

@@ -1,0 +1,52 @@
+.repertoire {
+	&__inside {
+		overflow: hidden;
+	}
+	&__list {
+		margin-top: 60rem;
+		margin-left: -15rem;
+		margin-right: -15rem;
+		overflow: hidden;
+		margin-bottom: -120rem;
+	}
+	&__column {
+		border-bottom: 1px solid rgba(#6D6E71, .2);
+		margin-bottom: 60rem;
+		padding: 0 15rem 60rem;
+	}
+	&__item {
+		display: block;
+		transition: ease .2s;
+		&:hover {
+			color: $red;
+			.repertoire__preview {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+	&__preview {
+		display: block;
+		margin-bottom: 30rem;
+		overflow: hidden;
+		img {
+			display: block;
+			width: 100%;
+			transition: ease .3s;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.repertoire {
+		&__list {
+			margin-top: 30px;
+			margin-bottom: -60px;
+		}
+		&__column {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+	}
+}

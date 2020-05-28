@@ -1,0 +1,331 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Проекты';
+
+block content
+	include ../layouts/header
+	+b.page
+		+e.wrap.wrap
+			+e.UL.breadcrumbs.breadcrumbs__.flex
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					| Проекты
+	+b.project
+		+e.wrap.wrap
+			+e.H1.title.h2.b Проекты 
+		+e.gallery.gallery__._big
+			+e.wrap.wrap
+				+e.cat.js-mobile-select
+					+e.cat-head
+						+e.cat-label.js-mobile-label
+						+e.cat-icon
+							+icon('arrowSelect')
+					+e.cat-list
+						+e.cat-item.js-cat-item.js-mobile-item.is-active Экскурсия в мир закулисья
+						+e.cat-item.js-cat-item.js-mobile-item Читки
+						+e.cat-item.js-cat-item.js-mobile-item Выставки в галерее «the harasho»
+						+e.cat-item.js-cat-item.js-mobile-item Шоу «студия 22»
+						+e.cat-item.js-cat-item.js-mobile-item Творческие вечера
+						+e.cat-item.js-cat-item.js-mobile-item Лаборатория «молодая режиссура»
+						+e.cat-item.js-cat-item.js-mobile-item Твидовый ретро велокруиз
+				+e.inside
+					+e.tabs
+						+e.tab.is-active.js-cat-tab.js-container
+							+e.nav.flex
+								+e.nav-item.js-nav-item.is-active Фото
+								+e.nav-item.js-nav-item Видео
+							+e.tab-list
+								+e.tab-item.js-tab.is-active
+									+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+										.swiper-wrapper.js-gallery
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide.jpg")
+													img(src="/img/gallery__slide.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide2.jpg")
+													img(src="/img/gallery__slide2.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide3.jpg")
+													img(src="/img/gallery__slide3.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide.jpg")
+													img(src="/img/gallery__slide.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide2.jpg")
+													img(src="/img/gallery__slide2.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide3.jpg")
+													img(src="/img/gallery__slide3.jpg")
+										+e.inside
+											+e.bottom.flex._vertical._justify
+												+e.pagination.swiper-pagination
+												+e.arrows.nav-slider__.flex
+													+e.arrow._prev.swiper-prev
+														+icon('prev')
+													+e.arrow._next.swiper-next
+														+icon('next')
+											+e.text.h6
+												+e.text-title.h3
+													| Экскурсия в мир закулисья
+												p В далеких 80-х «Золотой ключик» был только мечтой двух молодых режиссеров – Олега и Нины Пермяковых, которые сразу по окончании Орловского филиала Московского государственного института культуры (ныне – ОГИИК) переехали в Евпаторию. Чем жила и горела эта пара талантливых личностей? Их мечтой был уникальный театр — ДЕТСКИЙ театр по принципу профессионального, с большим количеством разножанровых трупп, где дети-артисты со взрослыми-профессионалами работают на один общий результат – спектакль! Этот театр еще до своего появления на свет существовал в мыслях и сердцах его «родителей». Олег и Нина Пермяковы представляли его до мельчайших подробностей: со всеми цехами, мастерскими, службами и маленькими артистами…. Тогда основатели этого евпаторийского чуда еще не знали, что их детищу предстоит стать не просто культурным центром, но и целой лабораторией для педагогов театральных факультетов, профессоров, режиссеров и актеров, руководителей театров из России и других стран мира, занимающихся изучением современного театра и феномена «Золотого ключика» в частности.
+								+e.tab-item.js-tab
+									+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+										.swiper-wrapper.js-gallery
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide.jpg")
+													img(src="/img/gallery__slide.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide2.jpg")
+													img(src="/img/gallery__slide2.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide3.jpg")
+													img(src="/img/gallery__slide3.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide.jpg")
+													img(src="/img/gallery__slide.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide2.jpg")
+													img(src="/img/gallery__slide2.jpg")
+										+e.inside
+											+e.bottom.flex._vertical._justify
+												+e.pagination.swiper-pagination
+												+e.arrows.nav-slider__.flex
+													+e.arrow._prev.swiper-prev
+														+icon('prev')
+													+e.arrow._next.swiper-next
+														+icon('next')
+											+e.text.h6
+												| Спектакль «Собака» (пост. А. Пермяков, реж. Л. Муслединова) получил две награды Высшей театральной премии Крыма – стал «Лучшим спектаклем для детей» и победил в номинации «Лучшая женская роль» (Д. Шарпило за роль Собаки), спектакль «Женитьба Бальзаминова» победил в номинации «Лучшая работа режиссера» (реж. А. Пермяков);
+						+e.tab.js-cat-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										+e.text-title.h3
+											| Читки
+										p В далеких 80-х «Золотой ключик» был только мечтой двух молодых режиссеров – Олега и Нины Пермяковых, которые сразу по окончании Орловского филиала Московского государственного института культуры (ныне – ОГИИК) переехали в Евпаторию. Чем жила и горела эта пара талантливых личностей? Их мечтой был уникальный театр — ДЕТСКИЙ театр по принципу профессионального, с большим количеством разножанровых трупп, где дети-артисты со взрослыми-профессионалами работают на один общий результат – спектакль! Этот театр еще до своего появления на свет существовал в мыслях и сердцах его «родителей». Олег и Нина Пермяковы представляли его до мельчайших подробностей: со всеми цехами, мастерскими, службами и маленькими артистами…. Тогда основатели этого евпаторийского чуда еще не знали, что их детищу предстоит стать не просто культурным центром, но и целой лабораторией для педагогов театральных факультетов, профессоров, режиссеров и актеров, руководителей театров из России и других стран мира, занимающихся изучением современного театра и феномена «Золотого ключика» в частности.
+						+e.tab.js-cat-tab
+							+e.nav.flex
+								+e.nav-item.js-nav-item.is-active Фото
+								+e.nav-item.js-nav-item Видео
+							+e.tab-list
+								+e.tab-item.js-tab.is-active
+									+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+										.swiper-wrapper.js-gallery
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide.jpg")
+													img(src="/img/gallery__slide.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide2.jpg")
+													img(src="/img/gallery__slide2.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide3.jpg")
+													img(src="/img/gallery__slide3.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide.jpg")
+													img(src="/img/gallery__slide.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide2.jpg")
+													img(src="/img/gallery__slide2.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide3.jpg")
+													img(src="/img/gallery__slide3.jpg")
+										+e.inside
+											+e.bottom.flex._vertical._justify
+												+e.pagination.swiper-pagination
+												+e.arrows.nav-slider__.flex
+													+e.arrow._prev.swiper-prev
+														+icon('prev')
+													+e.arrow._next.swiper-next
+														+icon('next')
+											+e.text.h6
+												+e.text-title.h3
+													| Выставки в галерее «the harasho»
+												p В далеких 80-х «Золотой ключик» был только мечтой двух молодых режиссеров – Олега и Нины Пермяковых, которые сразу по окончании Орловского филиала Московского государственного института культуры (ныне – ОГИИК) переехали в Евпаторию. Чем жила и горела эта пара талантливых личностей? Их мечтой был уникальный театр — ДЕТСКИЙ театр по принципу профессионального, с большим количеством разножанровых трупп, где дети-артисты со взрослыми-профессионалами работают на один общий результат – спектакль! Этот театр еще до своего появления на свет существовал в мыслях и сердцах его «родителей». Олег и Нина Пермяковы представляли его до мельчайших подробностей: со всеми цехами, мастерскими, службами и маленькими артистами…. Тогда основатели этого евпаторийского чуда еще не знали, что их детищу предстоит стать не просто культурным центром, но и целой лабораторией для педагогов театральных факультетов, профессоров, режиссеров и актеров, руководителей театров из России и других стран мира, занимающихся изучением современного театра и феномена «Золотого ключика» в частности.
+								+e.tab-item.js-tab
+									+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+										.swiper-wrapper.js-gallery
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide.jpg")
+													img(src="/img/gallery__slide.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide2.jpg")
+													img(src="/img/gallery__slide2.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide3.jpg")
+													img(src="/img/gallery__slide3.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide.jpg")
+													img(src="/img/gallery__slide.jpg")
+											+e.slide.swiper-slide
+												+e.A.item(href="/app/img/gallery__slide2.jpg")
+													img(src="/img/gallery__slide2.jpg")
+										+e.inside
+											+e.bottom.flex._vertical._justify
+												+e.pagination.swiper-pagination
+												+e.arrows.nav-slider__.flex
+													+e.arrow._prev.swiper-prev
+														+icon('prev')
+													+e.arrow._next.swiper-next
+														+icon('next')
+											+e.text.h6
+												p В далеких 80-х «Золотой ключик» был только мечтой двух молодых режиссеров – Олега и Нины Пермяковых, которые сразу по окончании Орловского филиала Московского государственного института культуры (ныне – ОГИИК) переехали в Евпаторию. Чем жила и горела эта пара талантливых личностей? Их мечтой был уникальный театр — ДЕТСКИЙ театр по принципу профессионального, с большим количеством разножанровых трупп, где дети-артисты со взрослыми-профессионалами работают на один общий результат – спектакль! Этот театр еще до своего появления на свет существовал в мыслях и сердцах его «родителей». Олег и Нина Пермяковы представляли его до мельчайших подробностей: со всеми цехами, мастерскими, службами и маленькими артистами…. Тогда основатели этого евпаторийского чуда еще не знали, что их детищу предстоит стать не просто культурным центром, но и целой лабораторией для педагогов театральных факультетов, профессоров, режиссеров и актеров, руководителей театров из России и других стран мира, занимающихся изучением современного театра и феномена «Золотого ключика» в частности.
+						+e.tab.js-cat-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										+e.text-title.h3
+											| Шоу «студия 22»
+										p В далеких 80-х «Золотой ключик» был только мечтой двух молодых режиссеров – Олега и Нины Пермяковых, которые сразу по окончании Орловского филиала Московского государственного института культуры (ныне – ОГИИК) переехали в Евпаторию. Чем жила и горела эта пара талантливых личностей? Их мечтой был уникальный театр — ДЕТСКИЙ театр по принципу профессионального, с большим количеством разножанровых трупп, где дети-артисты со взрослыми-профессионалами работают на один общий результат – спектакль! Этот театр еще до своего появления на свет существовал в мыслях и сердцах его «родителей». Олег и Нина Пермяковы представляли его до мельчайших подробностей: со всеми цехами, мастерскими, службами и маленькими артистами…. Тогда основатели этого евпаторийского чуда еще не знали, что их детищу предстоит стать не просто культурным центром, но и целой лабораторией для педагогов театральных факультетов, профессоров, режиссеров и актеров, руководителей театров из России и других стран мира, занимающихся изучением современного театра и феномена «Золотого ключика» в частности.
+						+e.tab.js-cat-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										+e.text-title.h3
+											| Творческие вечера
+										p В далеких 80-х «Золотой ключик» был только мечтой двух молодых режиссеров – Олега и Нины Пермяковых, которые сразу по окончании Орловского филиала Московского государственного института культуры (ныне – ОГИИК) переехали в Евпаторию. Чем жила и горела эта пара талантливых личностей? Их мечтой был уникальный театр — ДЕТСКИЙ театр по принципу профессионального, с большим количеством разножанровых трупп, где дети-артисты со взрослыми-профессионалами работают на один общий результат – спектакль! Этот театр еще до своего появления на свет существовал в мыслях и сердцах его «родителей». Олег и Нина Пермяковы представляли его до мельчайших подробностей: со всеми цехами, мастерскими, службами и маленькими артистами…. Тогда основатели этого евпаторийского чуда еще не знали, что их детищу предстоит стать не просто культурным центром, но и целой лабораторией для педагогов театральных факультетов, профессоров, режиссеров и актеров, руководителей театров из России и других стран мира, занимающихся изучением современного театра и феномена «Золотого ключика» в частности.
+						+e.tab.js-cat-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										+e.text-title.h3
+											| Лаборатория «молодая режиссура»
+										p В далеких 80-х «Золотой ключик» был только мечтой двух молодых режиссеров – Олега и Нины Пермяковых, которые сразу по окончании Орловского филиала Московского государственного института культуры (ныне – ОГИИК) переехали в Евпаторию. Чем жила и горела эта пара талантливых личностей? Их мечтой был уникальный театр — ДЕТСКИЙ театр по принципу профессионального, с большим количеством разножанровых трупп, где дети-артисты со взрослыми-профессионалами работают на один общий результат – спектакль! Этот театр еще до своего появления на свет существовал в мыслях и сердцах его «родителей». Олег и Нина Пермяковы представляли его до мельчайших подробностей: со всеми цехами, мастерскими, службами и маленькими артистами…. Тогда основатели этого евпаторийского чуда еще не знали, что их детищу предстоит стать не просто культурным центром, но и целой лабораторией для педагогов театральных факультетов, профессоров, режиссеров и актеров, руководителей театров из России и других стран мира, занимающихся изучением современного театра и феномена «Золотого ключика» в частности.
+						+e.tab.js-cat-tab
+							+e.slider.swiper-container.js-slider#gallery(data-slidesPerView="auto", data-centeredSlides="true")
+								.swiper-wrapper.js-gallery
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide.jpg")
+											img(src="/img/gallery__slide.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide2.jpg")
+											img(src="/img/gallery__slide2.jpg")
+									+e.slide.swiper-slide
+										+e.A.item(href="/app/img/gallery__slide3.jpg")
+											img(src="/img/gallery__slide3.jpg")
+								+e.inside
+									+e.bottom.flex._vertical._justify
+										+e.pagination.swiper-pagination
+										+e.arrows.nav-slider__.flex
+											+e.arrow._prev.swiper-prev
+												+icon('prev')
+											+e.arrow._next.swiper-next
+												+icon('next')
+									+e.text.h6
+										+e.text-title.h3
+											| Твидовый ретро велокруиз
+										p В далеких 80-х «Золотой ключик» был только мечтой двух молодых режиссеров – Олега и Нины Пермяковых, которые сразу по окончании Орловского филиала Московского государственного института культуры (ныне – ОГИИК) переехали в Евпаторию. Чем жила и горела эта пара талантливых личностей? Их мечтой был уникальный театр — ДЕТСКИЙ театр по принципу профессионального, с большим количеством разножанровых трупп, где дети-артисты со взрослыми-профессионалами работают на один общий результат – спектакль! Этот театр еще до своего появления на свет существовал в мыслях и сердцах его «родителей». Олег и Нина Пермяковы представляли его до мельчайших подробностей: со всеми цехами, мастерскими, службами и маленькими артистами…. Тогда основатели этого евпаторийского чуда еще не знали, что их детищу предстоит стать не просто культурным центром, но и целой лабораторией для педагогов театральных факультетов, профессоров, режиссеров и актеров, руководителей театров из России и других стран мира, занимающихся изучением современного театра и феномена «Золотого ключика» в частности.

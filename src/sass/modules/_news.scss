@@ -2,6 +2,16 @@
 	&_main {
 		margin-top: 150rem;
 	}
+	&_page {
+		margin-top: 100rem;
+	}
+	&__head {
+		display: flex;
+		margin-bottom: 60rem;
+	}
+	&__calendar {
+		margin-left: 20rem;
+	}
 	&__slider {
 		margin-top: 40rem;
 		padding: 20rem 0;
@@ -70,6 +80,15 @@
 	.news {
 		position: relative;
 		padding-bottom: 30px;
+		&_page {
+			margin-top: 30px;
+		}
+		&__head {
+			margin-bottom: 30px;
+		}
+		&__calendar {
+			margin-left: 10px;
+		}
 		.head-screen__link {
 			position: absolute;
 			right: 20px;

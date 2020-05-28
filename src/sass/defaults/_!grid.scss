@@ -1,3 +1,6 @@
+[class^="col-"], [class*=" col-"] {
+    width: 100%;
+}
 @media (min-width: 580px)  {
 	.col-min-12 { width: 100%; }
 	.col-min-11 { width: 91.65%; }

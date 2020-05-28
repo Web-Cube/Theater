@@ -1,0 +1,97 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Новости';
+
+block content
+	include ../layouts/header
+	+b.page
+		+e.wrap.wrap
+			+e.UL.breadcrumbs.breadcrumbs__.flex
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					| Новости
+	+b.news._page
+		+e.wrap.wrap
+			+e.head
+				+e.H1.title.h2.b Новости
+				+e.calendar.calendar__
+					+e.head
+						+e.label.h2.b
+							| 2020
+						+e.icon
+							+icon('arrowSelect')
+					+e.list.flex
+						+e.A.item(href="#") 1997
+						+e.A.item(href="#") 1998
+						+e.A.item(href="#") 1999
+						+e.A.item(href="#") 2000
+						+e.A.item(href="#") 2001
+						+e.A.item(href="#") 2002
+						+e.A.item(href="#") 2003
+						+e.A.item.is-active(href="#") 2004
+						+e.A.item(href="#") 2005
+						+e.A.item(href="#") 2006
+						+e.A.item(href="#") 2007
+						+e.A.item(href="#") 2008
+						+e.A.item(href="#") 2009
+						+e.A.item(href="#") 2011
+						+e.A.item(href="#") 2012
+						+e.A.item(href="#") 2013
+						+e.A.item(href="#") 2014
+						+e.A.item(href="#") 2015
+						+e.A.item(href="#") 2016
+						+e.A.item(href="#") 2017
+						+e.A.item(href="#") 2018
+						+e.A.item(href="#") 2019
+						+e.A.item(href="#") 2020
+			+e.list.flex
+				+e.A.item.col-min-6.col-sm-4.col-lg-3(href="#")
+					+e.item-img
+						img(src="/img/news_thumb.jpg")
+					+e.item-title.h5
+						| Как купить билет онлайн в крымский театр юного зрителя
+					+e.item-date 26.02.2020
+				+e.A.item.col-min-6.col-sm-4.col-lg-3(href="#")
+					+e.item-img
+						img(src="/img/news_thumb.jpg")
+					+e.item-title.h5
+						| Как купить билет онлайн в крымский театр юного зрителя
+					+e.item-date 26.02.2020
+				+e.A.item.col-min-6.col-sm-4.col-lg-3(href="#")
+					+e.item-img
+						img(src="/img/news_thumb.jpg")
+					+e.item-title.h5
+						| Как купить билет онлайн в крымский театр юного зрителя
+					+e.item-date 26.02.2020
+				+e.A.item.col-min-6.col-sm-4.col-lg-3(href="#")
+					+e.item-img
+						img(src="/img/news_thumb.jpg")
+					+e.item-title.h5
+						| Как купить билет онлайн в крымский театр юного зрителя
+					+e.item-date 26.02.2020
+				+e.A.item.col-min-6.col-sm-4.col-lg-3(href="#")
+					+e.item-img
+						img(src="/img/news_thumb.jpg")
+					+e.item-title.h5
+						| Как купить билет онлайн в крымский театр юного зрителя
+					+e.item-date 26.02.2020
+				+e.A.item.col-min-6.col-sm-4.col-lg-3(href="#")
+					+e.item-img
+						img(src="/img/news_thumb.jpg")
+					+e.item-title.h5
+						| Как купить билет онлайн в крымский театр юного зрителя
+					+e.item-date 26.02.2020
+				+e.A.item.col-min-6.col-sm-4.col-lg-3(href="#")
+					+e.item-img
+						img(src="/img/news_thumb.jpg")
+					+e.item-title.h5
+						| Как купить билет онлайн в крымский театр юного зрителя
+					+e.item-date 26.02.2020
+				+e.A.item.col-min-6.col-sm-4.col-lg-3(href="#")
+					+e.item-img
+						img(src="/img/news_thumb.jpg")
+					+e.item-title.h5
+						| Как купить билет онлайн в крымский театр юного зрителя
+					+e.item-date 26.02.2020
