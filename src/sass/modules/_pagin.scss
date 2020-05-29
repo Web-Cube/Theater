@@ -1,0 +1,53 @@
+.pagin {
+	margin-right: -1px;
+	&__item {
+		width: 72rem;
+		height: 72rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #D4D4D5;
+		margin-right: -1px;
+		font-size: 25rem;
+		transition: ease .2s;
+		&_current, &:hover {
+			background: $red;
+			color: #fff;
+			border-color: $red;
+			position: relative;
+			z-index: 2;
+			.icon {
+				stroke: #fff;
+			}
+		}
+		.icon {
+			width: 12rem;
+			height: 24rem;
+			fill: none;
+			stroke: #000;
+			stroke-width: 3px;
+			transition: ease .2s;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.pagin {
+		&__item {
+			width: 47px;
+			height: 47px;
+			font-size: 15px;
+			.icon {
+				width: 8px;
+				height: 16px;
+			}
+		}
+	}
+}
+@include max-screen($small_mobile) {
+	.pagin {
+		&__item {
+			width: 1/6*100%;
+		}
+	}
+}

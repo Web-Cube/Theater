@@ -30,7 +30,7 @@ var modals = {
 			return false;
 
 		if(e && $(e.currentTarget).attr('data-youtube')){
-			$(modal + ' iframe').attr('src', 'https://www.youtube.com/embed/'+$(e.currentTarget).data('youtube')+'?autoplay=1&showinfo=0&rel=0&controls=0')
+			$(modal + ' iframe').attr('src', 'https://www.youtube.com/embed/'+$(e.currentTarget).data('youtube')+'?autoplay=1&amp;loop=1&amp;rel=0&amp;mute=0&amp;')
 		}
 
 		if(e && $(e.currentTarget).attr('data-input')){

@@ -10,11 +10,9 @@ var defaults = {
 			$(this).closest('.header-mobile').fadeOut(300);
 		});
 		
-		if ( $(window).innerWidth() < 769 ) {
-			$('.header__search-btn').click(function(){
-				$('.js-mobile-search').fadeIn(300);
-			});
-		}
+		$('.header__search-btn').click(function(){
+			$('.js-mobile-search').fadeIn(300);
+		});
 		
 	},
 	
@@ -41,6 +39,11 @@ var defaults = {
 		if ( $(window).innerWidth() < 580 ) {
 			dropdownMenu();
 		}
+		
+		$(".case__artists-head").click(function(){
+			$(this).closest('.case__artists').toggleClass('is-active');
+			$(this).closest('.case__artists').find('.case__artists-inside').slideToggle(500);
+		});
 		
 	},
 	

@@ -1,0 +1,305 @@
+.case {
+	&__main {
+		min-height: 100vh;
+		position: relative;
+		padding-top: 155rem;
+		color: #fff;
+		&-bottom {
+			position: absolute;
+			left: 0;
+			bottom: 100rem;
+			z-index: 2;
+			width: 100%;
+		}
+		&-cat {
+			margin-bottom: 50rem;
+		}
+		&-btn {
+			margin-top: 60rem;
+			min-width: 200rem;
+		}
+		&-column {
+			width: 50%;
+		}
+	}
+	&__tag {
+		display: inline-flex;
+		align-items: center;
+		font-size: 15rem;
+		margin-right: 20rem;
+		padding: 0 17rem;
+		background: $red;
+		color: #fff;
+		font-weight: 600;
+		text-transform: uppercase;
+		height: 37rem;
+	}
+	&__age-cat {
+		height: 37rem;
+		border: 1px solid #FFFFFF;
+		border-radius: 2px;
+		font-size: 25rem;
+		padding: 0 15rem;
+		display: inline-flex;
+		align-items: center;
+	}
+	&__bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(0deg, #000000 -48.11%, rgba(0, 0, 0, 0) 56.83%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+			transform: matrix(-1, 0, 0, 1, 0, 0);
+		}
+	}
+	&__inside-wrap {
+		max-width: 860rem;
+		margin: auto;
+	}
+	&__info {
+		padding: 100rem 0 50rem 0;
+		background: rgba(109, 110, 113, 0.03);
+		&-label {
+			margin-bottom: 15rem;
+		}
+		&-item {
+			margin-bottom: 50rem;
+			width: 50%;
+		}
+	}
+	&__content {
+		padding: 100rem 0;
+		&-top {
+			padding-bottom: 40rem;
+			border-bottom: 3px solid $red;
+		}
+		&-bottom {
+			margin-top: 100rem;
+			font-size: 20rem;
+			line-height: 35/20*1;
+			p:not(:last-child) {
+				margin-bottom: 35rem;
+			}
+		}
+	}
+	&__creators {
+		margin-top: 150rem;
+		&-item {
+			width: 50%;
+			margin-top: 60rem;
+		}
+		&-name {
+			margin-top: 10rem;
+			display: inline-flex;
+			border-bottom: 1px solid #000;
+		}
+	}
+	&__artists {
+		margin-top: 100rem;
+		padding: 60rem 0 60rem 0;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		&-head {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			cursor: pointer;
+		}
+		&-icon {
+			position: relative;
+			width: 20rem;
+			height: 20rem;
+			&:before, &:after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				background: #000;
+			}
+			&:before {
+				width: 100%;
+				height: 2px;
+			}
+			&:after {
+				width: 2px;
+				height: 100%;
+			}
+		}
+		&.is-active {
+			.case__artists-icon:after {
+				display: none;
+			}
+		}
+		&-inside {
+			overflow: hidden;
+			margin-top: 20rem;
+			display: none;
+		}
+		&-item {
+			width: 50%;
+			padding: 40rem 0;
+			border-bottom: 1px solid #D4D4D5;
+			display: flex;
+			align-items: center;
+		}
+		&-foto {
+			width: 100rem;
+			min-width: 100rem;
+			margin-right: 30rem;
+			img {
+				border-radius: 100%;
+			}
+		}
+		&-name {
+			font-size: 20rem;
+			line-height: 1.33;
+			margin-bottom: 10rem;
+		}
+		&-position {
+			font-size: 14rem;
+			line-height: 20/14*1;
+		}
+		&-list {
+			margin-bottom: -40rem;
+		}
+	}
+}
+
+@include max-screen(1600px) {
+	.case {
+		&__main {
+			&-column:first-child {
+				width: 60%;
+			}
+			&-column:last-child {
+				width: 40%;
+			}
+		}
+	}
+}
+
+@include max-screen($large_tablet) {
+	.case {
+		&__main {
+			&-column:first-child {
+				width: 66.66%;
+			}
+			&-column:last-child {
+				width: 33.33%;
+			}
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.case {
+		&__main {
+			padding-top: 100px;
+			&-column:first-child, &-column:last-child {
+				width: 100%;
+			}
+			&-cat {
+				margin-bottom: 20px;
+			}
+			&-btn {
+				margin-top: 30px;
+			}
+			&-bottom {
+				bottom: 30px;
+			}
+		}
+		&__age-cat {
+			font-size: 12px;
+		}
+		&__play {
+			margin-top: 30px;
+		}
+		&__info {
+			padding: 30px 0 0 0;
+			&-item {
+				margin-bottom: 30px;
+			}
+			&-label {
+				margin-bottom: 10px;
+			}
+		}
+		&__content {
+			padding: 50px 0;
+			&-top {
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 25px;
+				padding-bottom: 30px;
+			}
+			&-bottom {
+				margin-top: 50px;
+				font-size: 15px;
+				line-height: 25px;
+				p:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		&__creators {
+			margin-top: 50px;
+			&-item {
+				width: 100%;
+				margin-top: 30px;
+			}
+			&-name {
+				border-bottom: 0;
+			}
+		}
+		&__artists {
+			margin-top: 30px;
+			padding: 30px 0;
+			&-inside {
+				margin-top: 0;
+			}
+			&-item {
+				padding: 30px 0;
+				width: 100%;
+			}
+			&-foto {
+				width: 70px;
+				min-width: 70px;
+				margin-right: 20px;
+			}
+			&-name {
+				font-size: 15px;
+				line-height: 20px;
+				margin-bottom: 5px;
+			}
+			&-position {
+				font-size: 12px;
+				line-height: 20px;
+			}
+			&-list {
+				margin-bottom: -30px;
+			}
+		}
+	}
+}
+
+@include max-screen($small_mobile) {
+	.case {
+		&__info {
+			&-item {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -16,4 +16,12 @@
 			color: $gray;
 		}
 	}
+	&_white {
+		color: #fff;
+		.breadcrumbs__item {
+			a, &:after {
+				color: #fff;
+			}
+		}
+	}
 }
