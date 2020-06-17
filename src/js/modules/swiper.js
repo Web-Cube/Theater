@@ -127,6 +127,38 @@ var swiper = {
 				}
 			},
 		});
+		
+		$('.js-search-slider').each(function(){
+			
+			let Next = $(this).closest('.search-page__item').find('.nav-slider__arrow_next');
+			let Prev = $(this).closest('.search-page__item').find('.nav-slider__arrow_prev');
+			
+			var searchSlider =  new Swiper($(this), {
+				loop: true,
+				slidesPerView: 4,
+				keyboardControl: true,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: Next,
+					prevEl: Prev,
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+					},
+					580: {
+						slidesPerView: 2,
+					},
+					900: {
+						slidesPerView: 3,
+						spaceBetween: 20,
+					},
+					1440: {
+						slidesPerView: 4,
+					}
+				}
+			});
+		})
 
 	}
 

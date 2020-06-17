@@ -137,6 +137,16 @@
 		&-list {
 			display: flex;
 			justify-content: space-between;
+			position: relative;
+		}
+		&-border {
+			height: 2px;
+			background: $red;
+			min-width: 20px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transition: ease .3s;
 		}
 		&-item {
 			transition: ease .2s;
@@ -150,7 +160,7 @@
 				color: $red;
 			}
 			&.is-active {
-				border-color: $red;
+				//border-color: $red;
 			}
 			&:first-child {
 				padding-left: 0;

@@ -5,6 +5,7 @@ append vars
 
 block content
 	include ../layouts/header
+	include ../layouts/search-form_gray
 	+b.page
 		+e.wrap.wrap
 			+e.UL.breadcrumbs.breadcrumbs__.flex
@@ -14,7 +15,7 @@ block content
 					| Документы
 			+e.row.flex_justify
 				+e.sidebar.sidebar__
-					+e.nav.js-mobile-select
+					+e.nav.js-mobile-select.js-fixed
 						+e.nav-head
 							+e.nav-label.js-mobile-label
 							+e.nav-icon

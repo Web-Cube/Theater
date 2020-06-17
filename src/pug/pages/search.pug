@@ -5,6 +5,7 @@ append vars
 
 block content
 	include ../layouts/header
+	include ../layouts/search-form_gray
 	+b.search-page
 		+e.wrap.wrap
 			+e.FORM.form
@@ -15,3 +16,209 @@ block content
 				+e.form-result.p15
 					| Результаты: 
 					span.js-search-result 18
+			+e.item
+				+b.head-screen.flex._justify._vertical
+					+e.left.flex._vertical
+						+e.H2.title.h3 Спкектакли
+						+e.A.link.arrow-link__.h6.is-red(href="#")
+							+e.text Все спектакли
+							+e.icon
+								+icon('next')
+					+e.right
+						+e.nav.nav-slider__.flex
+							+e.arrow._prev
+								+icon('prev')
+							+e.arrow._next
+								+icon('next')
+				+e.slider.performance__.js-search-slider.swiper-container
+					.swiper-wrapper
+						+e.slide.swiper-slide
+							+e.item
+								+e.A.preview(href="#")
+									+e.tag Премьера
+									img(src="/img/poster1.jpg")
+									+e.date
+										| 12.03
+										span.vr |
+										| ПТ 13:00
+								+e.item-desc.p16.b.is-gray
+									| Режиссер: 
+									span.is-red А. Пермяков
+								+e.item-title.h5 Родственные души
+								+e.cat-name.p.b.is-gray
+									| Драмеди
+									span.is-red 16+
+								+e.A.btn.btn__._ticket(href="#buy")
+									+e.text Купить билет
+									+e.ticket._left
+										+icon('ticket')
+									+e.ticket._right
+										+icon('ticket')
+						+e.slide.swiper-slide
+							+e.item
+								+e.A.preview(href="#")
+									+e.tag Премьера
+									img(src="/img/poster1.jpg")
+									+e.date
+										| 12.03
+										span.vr |
+										| ПТ 13:00
+								+e.item-desc.p16.b.is-gray
+									| Режиссер: 
+									span.is-red А. Пермяков
+								+e.item-title.h5 Родственные души
+								+e.cat-name.p.b.is-gray
+									| Драмеди
+									span.is-red 16+
+								+e.A.btn.btn__._ticket(href="#buy")
+									+e.text Купить билет
+									+e.ticket._left
+										+icon('ticket')
+									+e.ticket._right
+										+icon('ticket')
+						+e.slide.swiper-slide
+							+e.item
+								+e.A.preview(href="#")
+									+e.tag Премьера
+									img(src="/img/poster1.jpg")
+									+e.date
+										| 12.03
+										span.vr |
+										| ПТ 13:00
+								+e.item-desc.p16.b.is-gray
+									| Режиссер: 
+									span.is-red А. Пермяков
+								+e.item-title.h5 Родственные души
+								+e.cat-name.p.b.is-gray
+									| Драмеди
+									span.is-red 16+
+								+e.A.btn.btn__._ticket(href="#buy")
+									+e.text Купить билет
+									+e.ticket._left
+										+icon('ticket')
+									+e.ticket._right
+										+icon('ticket')
+						+e.slide.swiper-slide
+							+e.item
+								+e.A.preview(href="#")
+									+e.tag Премьера
+									img(src="/img/poster1.jpg")
+									+e.date
+										| 12.03
+										span.vr |
+										| ПТ 13:00
+								+e.item-desc.p16.b.is-gray
+									| Режиссер: 
+									span.is-red А. Пермяков
+								+e.item-title.h5 Родственные души
+								+e.cat-name.p.b.is-gray
+									| Драмеди
+									span.is-red 16+
+								+e.A.btn.btn__._ticket(href="#buy")
+									+e.text Купить билет
+									+e.ticket._left
+										+icon('ticket')
+									+e.ticket._right
+										+icon('ticket')
+			+e.item
+				+b.head-screen.flex._justify._vertical
+					+e.left.flex._vertical
+						+e.H2.title.h3 Люди
+						+e.A.link.arrow-link__.h6.is-red(href="#")
+							+e.text Все люди
+							+e.icon
+								+icon('next')
+					+e.right
+						+e.nav.nav-slider__.flex
+							+e.arrow._prev
+								+icon('prev')
+							+e.arrow._next
+								+icon('next')
+				+e.slider.team__.js-search-slider.swiper-container
+					.swiper-wrapper
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.foto
+									img(src="/img/team1.jpg")
+								+e.name Андрей Пермяков
+								+e.position Должность
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.foto
+									img(src="/img/team1.jpg")
+								+e.name Андрей Пермяков
+								+e.position Должность
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.foto
+									img(src="/img/team1.jpg")
+								+e.name Андрей Пермяков
+								+e.position Должность
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.foto
+									img(src="/img/team1.jpg")
+								+e.name Андрей Пермяков
+								+e.position Должность
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.foto
+									img(src="/img/team1.jpg")
+								+e.name Андрей Пермяков
+								+e.position Должность
+			+e.item
+				+b.head-screen.flex._justify._vertical
+					+e.left.flex._vertical
+						+e.H2.title.h3 Статьи
+						+e.A.link.arrow-link__.h6.is-red(href="#")
+							+e.text Все статьи
+							+e.icon
+								+icon('next')
+					+e.right
+						+e.nav.nav-slider__.flex
+							+e.arrow._prev
+								+icon('prev')
+							+e.arrow._next
+								+icon('next')
+				+e.slider.repertoire__.js-search-slider.swiper-container
+					.swiper-wrapper
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.preview
+									img(src="/img/repertoire__preview1.jpg")
+								+e.H3.item-title.h5
+									| «Мюнхгаузен»
+								+e.desc.p.is-gray
+									| Для детей
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.preview
+									img(src="/img/repertoire__preview1.jpg")
+								+e.H3.item-title.h5
+									| «Мюнхгаузен»
+								+e.desc.p.is-gray
+									| Для детей
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.preview
+									img(src="/img/repertoire__preview1.jpg")
+								+e.H3.item-title.h5
+									| «Мюнхгаузен»
+								+e.desc.p.is-gray
+									| Для детей
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.preview
+									img(src="/img/repertoire__preview1.jpg")
+								+e.H3.item-title.h5
+									| «Мюнхгаузен»
+								+e.desc.p.is-gray
+									| Для детей
+						+e.slide.swiper-slide
+							+e.A.item(href="#")
+								+e.preview
+									img(src="/img/repertoire__preview1.jpg")
+								+e.H3.item-title.h5
+									| «Мюнхгаузен»
+								+e.desc.p.is-gray
+									| Для детей

@@ -5,6 +5,7 @@ append vars
 
 block content
 	include ../layouts/header
+	include ../layouts/search-form_gray
 	+b.page
 		+e.wrap.wrap
 			+e.UL.breadcrumbs.breadcrumbs__.flex
@@ -18,8 +19,8 @@ block content
 		+e.wrap.wrap
 			+e.single
 				+e.row.flex._justify
-					+e.single-foto-wrap.js-fixed
-						+e.single-foto.js-fixed-item
+					+e.single-foto-wrap
+						+e.single-foto.js-fixed
 							img(src="/img/team_big.jpg")
 					+e.single-col.col-sm-6
 						+e.H1.single-title.h2.b

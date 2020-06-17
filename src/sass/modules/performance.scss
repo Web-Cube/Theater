@@ -1,0 +1,61 @@
+.performance {
+	&__item {
+		&-desc {
+			margin-top: 30rem;
+		}
+		&-title {
+			margin-top: 20rem;
+		}
+	}
+	&__preview {
+		display: block;
+		position: relative;
+	}
+	&__tag {
+		background: $red;
+		color: #fff;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 40rem;
+		border-radius: 3px;
+		display: inline-flex;
+		align-items: center;
+		padding: 0 15rem;
+		text-transform: uppercase;
+		font-size: 15rem;
+		line-height: 18rem;
+		font-weight: 600;
+	}
+	&__date {
+		background: $green;
+		color: #fff;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 40rem;
+		border-radius: 3px;
+		display: inline-flex;
+		align-items: center;
+		padding: 0 15rem;
+		text-transform: uppercase;
+		font-size: 15rem;
+		line-height: 18rem;
+		font-weight: 600;
+		.vr {
+			display: inline-block;
+			opacity: 0.3;
+			margin: 0 10rem;
+		}
+	}
+	&__cat-name {
+		margin-top: 20rem;
+		span {
+			margin-left: 30rem;
+		}
+	}
+	&__btn {
+		margin-top: 30rem;
+		width: 100%;
+	}
+}

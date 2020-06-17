@@ -65,16 +65,46 @@
 	}
 	
 	&__search {
+		width: 19rem;
+		height: 19rem;
+		position: relative;
+		&.is-active {
+			.header__search-btn {
+				opacity: 0;
+				z-index: 0;
+			}
+			.header__search-close {
+				opacity: 1;
+				z-index: 2;
+			}
+		}
 		&-btn {
 			width: 19rem;
 			height: 19rem;
 			fill: none;
 			stroke: #fff;
 			stroke-width: 1.5;
-			cursor: pointer;
+			z-index: 2;
 			&_gray {
 				stroke: $gray;
 			}
+		}
+		&-close {
+			width: 19rem;
+			height: 19rem;
+			stroke: #fff;
+			stroke-width: 1.5;
+			opacity: 0;
+			&_gray {
+				stroke: $gray;
+			}
+		}
+		&-btn, &-close {
+			transition: ease .2s;
+			position: absolute;
+			top: 0;
+			left: 0;
+			cursor: pointer;
 		}
 	}
 	

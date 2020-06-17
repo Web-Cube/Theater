@@ -5,6 +5,7 @@ append vars
 
 block content
 	include ../layouts/header
+	include ../layouts/search-form_gray
 	+b.page
 		+e.wrap.wrap
 			+e.UL.breadcrumbs.breadcrumbs__.flex
@@ -23,6 +24,7 @@ block content
 						+e.cat-icon
 							+icon('arrowSelect')
 					+e.cat-list
+						+e.cat-border.js-slide-line
 						+e.cat-item.js-cat-item.js-mobile-item.is-active Экскурсия в мир закулисья
 						+e.cat-item.js-cat-item.js-mobile-item Читки
 						+e.cat-item.js-cat-item.js-mobile-item Выставки в галерее «the harasho»
