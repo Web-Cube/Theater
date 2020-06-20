@@ -149,10 +149,25 @@ var defaults = {
 		})
 		
 	},
+	
+	calendar: () => {
+		$('.calendar').each(function(){
+			$('.calendar__label').text( $('.calendar__item.is-active').text() );
+		}).click(function(){
+			$(this).toggleClass('is-active');
+		});
+		
+		$('.calendar__item').click(function(){
+			$('.calendar__item.is-active').removeClass('is-active');
+			$(this).addClass("is-active");
+			$('.calendar__label').text( $(this).text() );
+		});
+	},
 
 	init: () => {
 
 		defaults.burger();
+		defaults.calendar();
 		defaults.dropdownMenu();
 		defaults.quantityProducts();
 		defaults.attachFile();
@@ -163,6 +178,7 @@ var defaults = {
 		$(window).resize(function(){
 			defaults.slideLine();
 		});
+		
 		
 		$('.js-fixed').each(function(){
 			$('.main-wrap').css('overflow','visible');
@@ -191,18 +207,6 @@ var defaults = {
 			});
 			
 		};
-		
-		$('.calendar').each(function(){
-			$('.calendar__label').text( $('.calendar__item.is-active').text() );
-		}).click(function(){
-			$(this).toggleClass('is-active');
-		});
-		
-		$('.calendar__item').click(function(){
-			$('.calendar__item.is-active').removeClass('is-active');
-			$(this).addClass("is-active");
-			$('.calendar__label').text( $(this).text() );
-		});
 
 	}
 }

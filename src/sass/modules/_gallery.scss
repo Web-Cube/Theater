@@ -104,11 +104,26 @@
 			stroke: #000;
 			stroke-width: 5px;
 			cursor: pointer;
+			&:before {
+				content: '';
+				display: block;
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				cursor: pointer;
+			}
 			&_prev {
 				left: 0;
 			}
 			&_next {
 				right: 0;
+			}
+			&.swiper-button-disabled {
+				cursor: default;
+				stroke: rgba(#000, .2);
 			}
 		}
 		&-item {

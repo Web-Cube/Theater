@@ -24,6 +24,8 @@
 		border-width: 1px;
 		border-style: solid;
 		border-color: #D3D4D5;
+		transition: ease .2s;
+		
 		&:not(:last-child) {
 			margin-right: -1px;
 		}
@@ -42,6 +44,11 @@
 		
 		.icon-instagram {
 			width: 22/16*1em;
+		}
+		
+		&:hover {
+			background: $red;
+			fill: #fff;
 		}
 	}
 }

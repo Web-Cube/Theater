@@ -33,6 +33,10 @@
 			display: block;
 			font-size: 20rem;
 			line-height: 24rem;
+			transition: ease .2s;
+			&:hover {
+				color: $red;
+			}
 		}
 		&-head {
 			display: flex;
@@ -59,6 +63,12 @@
 			line-height: 22rem;
 			&:not(:last-child) {
 				margin-bottom: 14rem;
+			}
+			a {
+				transition: ease .2s;
+				&:hover {
+					color: $red;
+				}
 			}
 		}
 	}

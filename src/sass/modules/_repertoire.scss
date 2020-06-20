@@ -15,12 +15,10 @@
 		margin-left: -15rem;
 		margin-right: -15rem;
 		overflow: hidden;
-		margin-bottom: -120rem;
+		margin-bottom: -80rem;
 	}
 	&__column {
-		border-bottom: 1px solid rgba(#6D6E71, .2);
-		margin-bottom: 60rem;
-		padding: 0 15rem 60rem;
+		padding: 0 15rem 80rem;
 	}
 	&__item {
 		display: block;
@@ -57,11 +55,11 @@
 		}
 		&__list {
 			margin-top: 30px;
-			margin-bottom: -60px;
 		}
 		&__column {
-			padding-bottom: 30px;
-			margin-bottom: 30px;
+			&:not(:last-child) {
+				padding-bottom: 50px;
+			}
 		}
 		&__head {
 			margin-top: 30px;

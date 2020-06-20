@@ -1,7 +1,7 @@
 .nav-slider {
 	&__arrow {
-		width: 12rem;
-		height: 24rem;
+		width: 15rem;
+		height: 28rem;
 		fill: none;
 		stroke: #000;
 		stroke-width: 3;
@@ -23,8 +23,8 @@
 @include max-screen($large_mobile) {
 	.nav-slider {
 		&__arrow {
-			width: 10px;
-			height: 20px;
+			width: 12px;
+			height: 24px;
 			&_prev {
 				margin-right: 40px;
 			}

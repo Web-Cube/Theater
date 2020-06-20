@@ -1,6 +1,12 @@
 .poster {
+	&_page {
+		margin-top: 150rem;
+	}
 	&_main {
 		padding-top: 150rem;
+	}
+	&__title {
+		margin-bottom: 100rem;
 	}
 	&__nav {
 		text-transform: uppercase;
@@ -26,6 +32,11 @@
 		}
 		&-title {
 			margin-bottom: 30rem;
+			transition: ease .2s;
+			display: block;
+			&:hover {
+				color: $red;
+			}
 		}
 		&-wrap {
 			min-width: 220rem;
@@ -55,8 +66,9 @@
 		display: inline-flex;
 		align-items: center;
 		font-size: 15rem;
+		line-height: 1;
 		margin-bottom: 30rem;
-		padding: 0 17rem;
+		padding: 8rem 17rem;
 		background: $red;
 		color: #fff;
 		font-weight: 600;
@@ -98,6 +110,9 @@
 				margin: 0 8px;
 			}
 		}
+	}
+	&__pagin {
+		margin-top: 60rem;
 	}
 }
 
@@ -199,6 +214,12 @@
 
 @include max-screen($large_mobile) {
 	.poster {
+		&_page {
+			margin-top: 30px;
+		}
+		&__title {
+			margin-bottom: 30px;
+		}
 		&_main {
 			padding-top: 50px;
 		}
@@ -235,6 +256,9 @@
 					fill: $red;
 				}
 			}
+		}
+		&__pagin {
+			margin-top: 50px;
 		}
 	}
 }

@@ -50,6 +50,7 @@
 
 @include max-screen($large_mobile) {
 	.search-page {
+		margin-top: 60px;
 		.head-screen__link {
 			position: absolute;
 			right: 0;
@@ -66,6 +67,17 @@
 			padding-bottom: 60px;
 			&:last-child {
 				padding-bottom: 60px;
+			}
+		}
+		&__form {
+			&-input {
+				font-size: 16px;
+				padding-bottom: 20px;
+			}
+			&-delete {
+				width: 20px;
+				bottom: 12px;
+				stroke-width: 2;
 			}
 		}
 	}

@@ -1,5 +1,8 @@
 .project {
 	margin-top: 150rem;
+	margin-bottom: -152rem;
+	position: relative;
+	z-index: 2;
 	&__title {
 		margin-bottom: 60rem;
 	}
